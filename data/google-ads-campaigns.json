@@ -1,0 +1,46 @@
+﻿{
+  "goal": "Stable daily lead generation system, target 2-10 leads per day",
+  "campaigns": [
+    {
+      "campaign": "Power Inductor Series",
+      "landing_page": "/landing/power-inductor.html",
+      "keywords": [
+        "power inductor supplier",
+        "power inductor manufacturer China",
+        "custom power inductor China"
+      ]
+    },
+    {
+      "campaign": "High Frequency Transformers",
+      "landing_page": "/landing/transformer.html",
+      "keywords": [
+        "high frequency transformer manufacturer",
+        "SMPS transformer supplier China"
+      ]
+    },
+    {
+      "campaign": "Common Mode Chokes",
+      "landing_page": "/landing/common-mode-choke.html",
+      "keywords": [
+        "common mode choke supplier",
+        "EMI choke manufacturer China"
+      ]
+    },
+    {
+      "campaign": "Custom Magnetic Components",
+      "landing_page": "/landing/custom-magnetic.html",
+      "keywords": [
+        "custom magnetic components China",
+        "OEM magnetic components supplier"
+      ]
+    }
+  ],
+  "negative_keywords": [
+    "inductor",
+    "transformer",
+    "coil",
+    "electronics",
+    "magnetic"
+  ],
+  "conversion_path": "Google Ads -> Dedicated Landing Page -> RFQ Form -> WhatsApp Prefilled Message -> Email Inquiry"
+}

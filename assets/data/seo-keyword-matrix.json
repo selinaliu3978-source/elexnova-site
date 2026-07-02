@@ -1,0 +1,25 @@
+﻿{
+  "coreKeywords": [
+    "power inductor manufacturer",
+    "high frequency transformer supplier",
+    "common mode choke factory",
+    "magnetic components supplier China"
+  ],
+  "industryKeywords": [
+    "EV charger inductors",
+    "solar inverter transformers",
+    "EMI filter solutions"
+  ],
+  "problemKeywords": [
+    "how to reduce EMI in power supply",
+    "inductor selection guide",
+    "transformer design guide"
+  ],
+  "articleMap": {
+    "how-to-select-power-inductor-for-dc-dc-converter.html": ["power inductor manufacturer", "inductor selection guide", "EV charger inductors"],
+    "emi-suppression-in-power-electronics.html": ["EMI filter solutions", "how to reduce EMI in power supply", "common mode choke factory"],
+    "high-frequency-transformer-design-guide.html": ["high frequency transformer supplier", "transformer design guide", "solar inverter transformers"],
+    "toroidal-vs-drum-core-inductors.html": ["magnetic components supplier China", "EV charger inductors", "inductor selection guide"],
+    "common-mode-choke-working-principle.html": ["common mode choke factory", "EMI filter solutions", "how to reduce EMI in power supply"]
+  }
+}
