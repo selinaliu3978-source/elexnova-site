@@ -3135,13 +3135,15 @@ body[data-product][data-gallery-density="single-product"] .product-library-card 
   min-height: 0 !important;
   max-height: 700px !important;
   overflow: hidden;
+  padding: clamp(28px, 4vw, 56px) !important;
 }
 
 body[data-product][data-gallery-density="single-product"] .product-library-card img {
-  width: 100% !important;
-  height: 100% !important;
+  width: 78% !important;
+  max-width: 860px !important;
+  height: auto !important;
   min-height: 0 !important;
-  max-height: 100% !important;
+  max-height: 82% !important;
   object-fit: contain !important;
   object-position: center center;
 }
@@ -3154,5 +3156,11 @@ body[data-product][data-gallery-density="single-product"] .product-library-card 
   body[data-product][data-gallery-density="single-product"] .product-library-card .product-library-card__link {
     height: clamp(360px, 58vh, 520px) !important;
     max-height: 520px !important;
+    padding: 24px !important;
+  }
+
+  body[data-product][data-gallery-density="single-product"] .product-library-card img {
+    width: 84% !important;
+    max-height: 84% !important;
   }
 }
