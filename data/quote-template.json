@@ -1,0 +1,35 @@
+{
+  "template_name": "Auto Closing Magnetic Component Quotation",
+  "fields": [
+    {
+      "name": "Technical solution",
+      "description": "Recommended magnetic component solution based on application, inductance, current and frequency"
+    },
+    {
+      "name": "Option A",
+      "description": "Standard product or closest available solution"
+    },
+    {
+      "name": "Option B",
+      "description": "Customized solution based on drawing, sample or target specification"
+    },
+    {
+      "name": "MOQ",
+      "description": "Minimum order quantity by selected solution"
+    },
+    {
+      "name": "Lead time",
+      "description": "Sample and batch production lead time"
+    },
+    {
+      "name": "Application fit",
+      "description": "Why the recommended option fits the customer's operating condition"
+    }
+  ],
+  "trust_materials": [
+    "/factory.html",
+    "/certificates.html",
+    "/assets/downloads/product-catalog.pdf",
+    "/assets/downloads/company-profile.pdf"
+  ]
+}

@@ -1,0 +1,57 @@
+﻿{
+  "system": "SEO Traffic Scaling System",
+  "core_keywords": [
+    "power inductor manufacturer",
+    "transformer supplier China"
+  ],
+  "long_tail_keywords": [
+    "high current inductor for EV charger",
+    "EMI filter for industrial power supply"
+  ],
+  "application_keywords": [
+    "EV charger magnetic components solution",
+    "switching power supply EMI design"
+  ],
+  "product_keyword_matrix": {
+    "power_inductors": {
+      "product_page": "/products/power-inductor.html",
+      "cluster": "/clusters/power-inductor-cluster.html",
+      "keywords": [
+        "power inductor manufacturer",
+        "high current inductor for EV charger",
+        "EV charger magnetic components solution",
+        "switching power supply EMI design"
+      ]
+    },
+    "high_frequency_transformers": {
+      "product_page": "/products/high-frequency-transformers.html",
+      "cluster": "/clusters/transformer-cluster.html",
+      "keywords": [
+        "transformer supplier China",
+        "transformer solution for EV charger",
+        "high frequency transformer for switching power supply",
+        "EV charger magnetic components solution"
+      ]
+    },
+    "common_mode_chokes": {
+      "product_page": "/products/common-mode-chokes.html",
+      "cluster": "/clusters/emi-choke-cluster.html",
+      "keywords": [
+        "EMI filter for industrial power supply",
+        "switching power supply EMI design",
+        "EMI suppression solution",
+        "common mode choke supplier China"
+      ]
+    },
+    "custom_magnetic_components": {
+      "product_page": "/products/custom-magnetic-components.html",
+      "cluster": "/clusters/power-inductor-cluster.html",
+      "keywords": [
+        "custom magnetic components supplier",
+        "EV charger magnetic components solution",
+        "EMI filter for industrial power supply",
+        "transformer supplier China"
+      ]
+    }
+  }
+}
