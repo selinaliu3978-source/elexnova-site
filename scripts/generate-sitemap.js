@@ -3,7 +3,7 @@ const path = require('path');
 
 const siteRoot = path.resolve(__dirname, '..');
 const productsRoot = path.join(siteRoot, 'products');
-const baseUrl = 'https://www.gzmiden.com';
+const baseUrl = 'https://elexnova.com';
 const staticPages = [
   'index.html',
   'products.html',

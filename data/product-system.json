@@ -2,7 +2,7 @@
   "system": {
     "name": "Automatic Product System 2.0",
     "sourceDirectory": "assets/images/products",
-    "baseUrl": "https://www.gzmiden.com",
+    "baseUrl": "https://elexnova.com",
     "defaultDescription": "Miden Electronics magnetic components for industrial electronics, power conversion, EMI filtering and custom B2B sourcing applications.",
     "defaultKeywords": [
       "Miden Electronics",
