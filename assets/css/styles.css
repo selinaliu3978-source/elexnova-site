@@ -3167,25 +3167,25 @@ body[data-product][data-gallery-density="single-product"] .product-library-card 
 
 /* Toroidal product page close-up image tuning */
 body[data-product="Toroidal Inductor Series"][data-gallery-density="single-product"] .product-library-card .product-library-card__link {
-  height: clamp(500px, 62vh, 640px) !important;
-  padding: clamp(64px, 8vw, 112px) !important;
+  height: clamp(520px, 64vh, 660px) !important;
+  padding: clamp(42px, 5vw, 72px) !important;
 }
 
 body[data-product="Toroidal Inductor Series"][data-gallery-density="single-product"] .product-library-card img {
-  width: 58% !important;
-  max-width: 620px !important;
-  max-height: 68% !important;
+  width: 68% !important;
+  max-width: 760px !important;
+  max-height: 78% !important;
   object-fit: contain !important;
 }
 
 @media (max-width: 900px) {
   body[data-product="Toroidal Inductor Series"][data-gallery-density="single-product"] .product-library-card .product-library-card__link {
-    height: clamp(330px, 52vh, 460px) !important;
-    padding: 36px !important;
+    height: clamp(340px, 54vh, 500px) !important;
+    padding: 28px !important;
   }
 
   body[data-product="Toroidal Inductor Series"][data-gallery-density="single-product"] .product-library-card img {
-    width: 70% !important;
-    max-height: 70% !important;
+    width: 80% !important;
+    max-height: 80% !important;
   }
 }
