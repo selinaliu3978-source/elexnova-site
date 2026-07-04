@@ -32,6 +32,15 @@ $seoMap = @{
   'catalog-p07-img06.jpeg' = 'Miden Electronics SMD Inductor Series compact PCB EMI filter application'
 }
 
+$excludedProductImages = @(
+  # Collage-style source with non-uniform cutout background; keep the file, but do not render it.
+  'assets/images/products/toroidal-inductors/catalog-p11-img06-246x249.jpeg'
+)
+
+$preferredImageOrder = @{
+  'assets/images/products/toroidal-inductors/DSC05062.JPG' = 0
+}
+
 $categoryMergeMap = @{}
 if ($productSystem -and $productSystem.aliases) {
   foreach ($alias in $productSystem.aliases.PSObject.Properties) {
@@ -117,10 +126,14 @@ function Get-ImagePaths([string[]]$folders) {
       Sort-Object FullName |
       ForEach-Object {
         $relative = $_.FullName.Substring((Resolve-Path $folderPath).Path.Length + 1).Replace('\', '/')
-        $items.Add("assets/images/products/$folder/$relative")
+        $imagePath = "assets/images/products/$folder/$relative"
+        if ($excludedProductImages -contains $imagePath) { return }
+        $items.Add($imagePath)
       }
   }
-  return $items
+  return @($items | Sort-Object @{ Expression = {
+    if ($preferredImageOrder.ContainsKey($_)) { $preferredImageOrder[$_] } else { 100 }
+  } }, @{ Expression = { $_ } })
 }
 
 function Get-InternalLinkSlugs($category) {
