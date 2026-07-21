@@ -1,0 +1,82 @@
+{
+  "power-inductor": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 14-28",
+    "series": ["High-current inductors for digital amplifiers", "Shielded plug-in power inductors", "Molded power chokes", "Integrated plug-in inductors"],
+    "parameters": ["Inductance and tolerance", "DC resistance (DCR)", "Saturation current (Isat)", "Temperature-rise current (Irms)", "Mechanical dimensions and pin layout"],
+    "applications": ["Digital power amplifiers", "Industrial power supplies", "DC-DC converters", "Renewable energy equipment", "High-current filtering"],
+    "customOptions": ["Inductance and current target", "Core and winding structure", "Dimensions and mounting", "Thermal design", "Sample matching"],
+    "notes": "Catalog tables define electrical values by individual series and part number. Depending on the series, saturation current is evaluated by inductance drop and RMS current by temperature rise. Final values must be confirmed against the applicable drawing and approved sample."
+  },
+  "smd-inductors": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 10 and 34-45",
+    "series": ["SMD power inductors", "Molded power choke HPB series", "Compact shielded constructions"],
+    "parameters": ["Inductance and tolerance", "DCR", "Isat", "Irms", "Package dimensions", "Operating temperature"],
+    "applications": ["Compact DC-DC converters", "Power regulation", "Industrial control boards", "Signal and power filtering"],
+    "customOptions": ["Package size", "Inductance", "Current capability", "Shielding structure", "Termination and packaging"],
+    "notes": "The catalog lists series-specific electrical tables and dimensional drawings. Molded series may use different saturation-current criteria from other constructions, so selection must be based on the exact part number."
+  },
+  "drum-core-inductors": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 11 and 29-33",
+    "series": ["Plug-in inductors", "RTB shielded plug-in series", "Radial and through-hole constructions"],
+    "parameters": ["Inductance", "DCR", "Rated current", "Saturation behavior", "Lead spacing", "Body dimensions"],
+    "applications": ["Power supplies", "DC-DC converters", "LED drivers", "Industrial control circuits", "General filtering"],
+    "customOptions": ["Lead length and spacing", "Winding and core selection", "Inductance tolerance", "Current target", "Mechanical envelope"],
+    "notes": "Catalog dimensions and electrical characteristics vary by RTB family and part number. Confirm PCB footprint, allowable temperature rise and peak-current requirement before sample approval."
+  },
+  "toroidal-inductors": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 60-63",
+    "series": ["Magnetic ring inductors", "Carbonyl magnetic ring inductors", "Ferrite magnetic ring inductors", "Nanocrystalline magnetic ring inductors"],
+    "parameters": ["Inductance", "Core material", "DCR", "Rated current", "Ring dimensions", "Lead and mounting format"],
+    "applications": ["Power conversion", "EMI filtering", "Renewable energy systems", "Industrial power equipment", "High-current circuits"],
+    "customOptions": ["Core material", "Wire size and winding", "Inductance and current", "Lead configuration", "Mechanical fixing"],
+    "notes": "Core material and winding construction strongly affect frequency response, loss, saturation and temperature rise. Use the application waveform and thermal condition when selecting a series."
+  },
+  "magnet-ring-inductor": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 60-63",
+    "series": ["Magnetic ring inductor series", "Carbonyl core series", "Ferrite core series", "Nanocrystalline core series"],
+    "parameters": ["Inductance", "Core size and material", "DCR", "Current rating", "Winding size", "Mechanical dimensions"],
+    "applications": ["Power supply filtering", "Energy conversion", "Industrial equipment", "Common and differential filtering", "Custom power assemblies"],
+    "customOptions": ["Core material and size", "Winding turns and wire", "Lead style", "Insulation", "Mounting support"],
+    "notes": "The catalog provides separate tables for different ring-core materials. Final selection should consider switching frequency, DC bias, temperature rise, insulation and available mounting space."
+  },
+  "common-mode-choke": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 9 and 51-59",
+    "series": ["ACM700 and ACM9070 common-mode filters", "UC1010-UC3324 series", "Power-line and signal-line choke constructions"],
+    "parameters": ["Inductance", "DCR", "Rated voltage", "Rated current", "Insulation resistance", "Dimensions and schematic"],
+    "applications": ["Power-line EMI suppression", "Industrial power supplies", "Communication equipment", "Converter input and output filters"],
+    "customOptions": ["Impedance and frequency target", "Current and voltage", "Creepage and insulation", "Pin layout", "Core and winding structure"],
+    "notes": "Common-mode choke selection must match the noise frequency band, operating current, voltage and safety requirements. Use the exact series drawing and electrical table for final approval."
+  },
+  "planar-transformer": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 12-13",
+    "series": ["High-frequency transformer families", "Compact transformer constructions", "Custom low-profile magnetic assemblies"],
+    "parameters": ["Turns ratio", "Inductance", "Operating frequency", "Input and output requirement", "Insulation", "Mechanical height"],
+    "applications": ["Compact power modules", "High-frequency conversion", "Industrial electronics", "Renewable energy equipment"],
+    "customOptions": ["Turns ratio and winding", "Core selection", "Insulation system", "Pin layout", "Low-profile dimensions"],
+    "notes": "Planar and low-profile projects are application-specific. Provide topology, frequency, voltage, current, isolation requirement and available dimensions for engineering review."
+  },
+  "high-frequency-transformers": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 12-13 and 64-66",
+    "series": ["PQ high-frequency transformers", "EC high-frequency transformers", "EE high-frequency transformers", "Custom high-frequency transformer assemblies"],
+    "parameters": ["Core and bobbin size", "Turns ratio", "Primary inductance", "Input and output requirement", "Switching frequency", "Insulation and pin layout"],
+    "applications": ["Switch-mode power supplies", "Isolated converters", "EV charging equipment", "Industrial power modules", "Auxiliary power supplies"],
+    "customOptions": ["Core and bobbin selection", "Winding and turns ratio", "Isolation and hipot target", "Pin configuration", "Thermal and mechanical design"],
+    "notes": "The catalog lists PQ, EC and EE transformer families with series-specific dimensions and electrical data. Final selection depends on converter topology, waveform, switching frequency, isolation class, temperature and production test requirements."
+  },
+  "transformers": {
+    "catalogPages": "MiDEN 2024 Product Catalog, pages 12-13 and 64-66",
+    "series": ["PQ high-frequency transformers", "EC high-frequency transformers", "EE high-frequency transformers", "Custom transformer assemblies"],
+    "parameters": ["Core and bobbin size", "Turns ratio", "Inductance", "Input and output requirement", "Frequency", "Insulation and pin layout"],
+    "applications": ["SMPS", "Isolated DC-DC converters", "EV charging equipment", "Industrial power supplies", "Auxiliary power modules"],
+    "customOptions": ["Core and bobbin", "Winding and turns ratio", "Isolation and hipot target", "Pin configuration", "Thermal and mechanical design"],
+    "notes": "Catalog transformer tables are organized by PQ, EC and EE family. Final design depends on topology, switching frequency, waveform, isolation class, thermal condition and production test requirements."
+  },
+  "custom-magnetic-components": {
+    "catalogPages": "MiDEN 2024 Product Catalog, page 13",
+    "series": ["Custom inductors", "Custom transformers", "EMI chokes", "Integrated magnetic assemblies"],
+    "parameters": ["Electrical target", "Core material", "Winding structure", "Insulation class", "Mounting method", "Production test plan"],
+    "applications": ["OEM power modules", "Industrial equipment", "EV charging", "LED drivers", "Renewable energy systems"],
+    "customOptions": ["Drawing review", "Sample matching", "Alternative materials", "Winding and terminal changes", "Packaging and quantity planning"],
+    "notes": "Custom projects require an approved drawing or sample specification. Share voltage, current, frequency, inductance or turns ratio, temperature, size limit and estimated demand for evaluation."
+  }
+}
