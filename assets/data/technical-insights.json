@@ -1,0 +1,1050 @@
+{
+  "hub": {
+    "url": "https://elexnova.com/news/",
+    "path": "news/index.html",
+    "h1": "Technical Insights for Magnetic Component Engineers",
+    "seoTitle": "Technical Insights | Inductor, Transformer and EMI Engineering Articles",
+    "description": "Elexnova Technical Insights publishes engineering articles on inductor selection, high frequency transformer design, EMI filtering, power supply design and magnetic component applications.",
+    "eyebrow": "Technical Insights",
+    "intro": "The Elexnova knowledge center for magnetic component engineering. Practical articles on inductors, high frequency transformers, EMI solutions, power supply design and industry applications - written for design engineers, sourcing teams and product managers who need to move from research to a working specification.",
+    "keywords": [
+      "inductor design articles",
+      "high frequency transformer design guide",
+      "EMI filter solutions",
+      "power supply design knowledge",
+      "magnetic components manufacturer",
+      "common mode choke selection",
+      "power inductor selection",
+      "magnetic component applications"
+    ]
+  },
+  "categories": [
+    {
+      "name": "Technical Articles",
+      "slug": "technical-articles",
+      "description": "Component selection, core material, winding, loss and reliability know-how for inductors, chokes and transformers."
+    },
+    {
+      "name": "Applications",
+      "slug": "applications",
+      "description": "How magnetic components behave in solar, EV charging, industrial automation, telecom and power supply designs."
+    },
+    {
+      "name": "Industry Trends",
+      "slug": "industry-trends",
+      "description": "Sourcing, compliance, quality systems and supply chain topics that affect magnetic component projects."
+    },
+    {
+      "name": "Company Updates",
+      "slug": "company-updates",
+      "description": "Factory capability, quality system, capacity and service updates from the MiDEN manufacturing team."
+    }
+  ],
+  "articles": [
+    {
+      "slug": "how-to-select-power-inductor",
+      "title": "How to Select a Power Inductor for DC-DC Converters",
+      "summary": "A step-by-step selection method for DC-DC power inductors: inductance from ripple current, saturation and thermal margin, DCR loss, shielding and the data a supplier needs for a fast quotation.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "power inductor selection",
+        "DC-DC converter inductor",
+        "inductor saturation current",
+        "ripple current calculation",
+        "inductor DCR loss",
+        "shielded power inductor",
+        "power inductor manufacturer"
+      ],
+      "products": [
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "SMD Inductor Series",
+          "../products/smd-inductors.html"
+        ],
+        [
+          "High Power Inductor",
+          "../products/high-power-inductor.html"
+        ]
+      ],
+      "related": [
+        "understanding-saturation-current-power-inductors",
+        "how-to-select-power-inductor-for-dc-dc-converter",
+        "choosing-magnetic-core-material"
+      ]
+    },
+    {
+      "slug": "how-to-select-power-inductor-for-dc-dc-converter",
+      "title": "How to Choose a Power Inductor for a DC-DC Converter",
+      "summary": "Ripple current, saturation current, thermal rise and DCR explained for buck, boost and buck-boost designs, plus the specification sheet a magnetics factory needs to quote accurately.",
+      "date": "2026-06-21",
+      "category": "Technical Articles",
+      "keywords": [
+        "power inductor for DC-DC converter",
+        "buck converter inductor",
+        "inductor ripple current",
+        "inductor thermal design",
+        "saturation current margin",
+        "inductor RFQ"
+      ],
+      "products": [
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "High Power Inductor",
+          "../products/high-power-inductor.html"
+        ],
+        [
+          "Flat Wire Inductor",
+          "../products/flat-wire-inductor.html"
+        ]
+      ],
+      "related": [
+        "how-to-select-power-inductor",
+        "understanding-saturation-current-power-inductors",
+        "choosing-magnetic-core-material"
+      ]
+    },
+    {
+      "slug": "understanding-saturation-current-power-inductors",
+      "shortTitle": "Understanding Saturation Current in Power Inductors",
+      "title": "Understanding Saturation Current in Power Inductor Series",
+      "summary": "What saturation current, rated current and temperature rise really mean on a datasheet, and how much inductance roll-off a high current converter can tolerate before performance drops.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "saturation current",
+        "inductor rated current",
+        "inductance roll-off",
+        "soft saturation core",
+        "power inductor datasheet",
+        "high current inductor"
+      ],
+      "products": [
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "High Power Inductor",
+          "../products/high-power-inductor.html"
+        ],
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ]
+      ],
+      "related": [
+        "how-to-select-power-inductor",
+        "choosing-magnetic-core-material",
+        "toroidal-inductors-vs-drum-core-inductors"
+      ]
+    },
+    {
+      "slug": "choosing-magnetic-core-material",
+      "title": "Choosing the Right Magnetic Core Material",
+      "summary": "Ferrite, iron powder, alloy powder and tape-wound cores compared by permeability, core loss, saturation behavior, temperature stability and cost for a given switching frequency.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "magnetic core material",
+        "ferrite core",
+        "iron powder core",
+        "alloy powder core",
+        "core loss",
+        "permeability selection",
+        "inductor core selection"
+      ],
+      "products": [
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ],
+        [
+          "Magnet Ring Inductor Series",
+          "../products/magnet-ring-inductor.html"
+        ]
+      ],
+      "related": [
+        "understanding-saturation-current-power-inductors",
+        "high-frequency-transformer-design-guide",
+        "toroidal-vs-drum-core-inductors"
+      ]
+    },
+    {
+      "slug": "common-mode-choke-working-principle",
+      "shortTitle": "Common Mode Choke Working Principle",
+      "title": "Common Mode Choke Working Principle for EMI Filter Solutions",
+      "summary": "How a common mode choke uses flux cancellation to block common mode noise while carrying load current, and which impedance, current and balance data should be checked before selection.",
+      "date": "2026-06-21",
+      "category": "Technical Articles",
+      "keywords": [
+        "common mode choke working principle",
+        "flux cancellation",
+        "common mode noise",
+        "EMI filter design",
+        "leakage current limit",
+        "common mode choke factory"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "SMD Inductor Series",
+          "../products/smd-inductors.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "common-mode-choke-vs-differential-mode-choke",
+        "emi-filter-design-basics",
+        "power-inductor-vs-common-mode-choke"
+      ]
+    },
+    {
+      "slug": "common-mode-choke-vs-differential-mode-choke",
+      "shortTitle": "Common Mode Choke vs Differential Mode Choke",
+      "title": "Common Mode Choke vs Differential Mode Choke: Selection Guide",
+      "summary": "Compare noise paths, magnetic structures and impedance behavior to decide when a common mode choke, a differential mode inductor or a combined filter stage is the right answer.",
+      "date": "2026-06-21",
+      "category": "Technical Articles",
+      "keywords": [
+        "common mode choke vs differential mode choke",
+        "differential mode inductor",
+        "EMI filter stages",
+        "line to ground noise",
+        "choke selection guide"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "common-mode-choke-working-principle",
+        "emi-filter-design-basics",
+        "power-inductor-vs-common-mode-choke"
+      ]
+    },
+    {
+      "slug": "power-inductor-vs-common-mode-choke",
+      "shortTitle": "Power Inductor vs Common Mode Choke",
+      "title": "What Is the Difference Between a Power Inductor and a Common Mode Choke",
+      "summary": "Both are wound magnetic components, but current path, core behavior, saturation limits and selection criteria are different. Here is how to avoid mixing them up in a bill of materials.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "power inductor vs common mode choke",
+        "magnetic component difference",
+        "energy storage inductor",
+        "EMI choke",
+        "filter inductor selection"
+      ],
+      "products": [
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ]
+      ],
+      "related": [
+        "common-mode-choke-vs-differential-mode-choke",
+        "understanding-saturation-current-power-inductors",
+        "emi-filter-design-basics"
+      ]
+    },
+    {
+      "slug": "toroidal-inductors-vs-drum-core-inductors",
+      "title": "Toroidal Inductors vs Drum Core Inductors",
+      "summary": "A structure-level comparison of toroidal and drum core inductors covering stray magnetic field, winding cost, mounting style, thermal behavior and typical application fit.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "toroidal inductor vs drum core inductor",
+        "stray magnetic field",
+        "inductor winding cost",
+        "through-hole inductor",
+        "inductor structure selection"
+      ],
+      "products": [
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ],
+        [
+          "Drum Core Inductor Series",
+          "../products/drum-core-inductors.html"
+        ],
+        [
+          "Magnet Ring Inductor Series",
+          "../products/magnet-ring-inductor.html"
+        ]
+      ],
+      "related": [
+        "toroidal-vs-drum-core-inductors",
+        "choosing-magnetic-core-material",
+        "understanding-saturation-current-power-inductors"
+      ]
+    },
+    {
+      "slug": "toroidal-vs-drum-core-inductors",
+      "shortTitle": "Toroidal vs Drum Core Inductors",
+      "title": "Toroidal vs Drum Core Inductors: Which Structure Fits Your Application?",
+      "summary": "Choose between toroidal and drum core structures by magnetic containment, manufacturability, cost, board space and the thermal demand of the application.",
+      "date": "2026-06-21",
+      "category": "Technical Articles",
+      "keywords": [
+        "toroidal vs drum core inductors",
+        "inductor structure selection",
+        "magnetic flux containment",
+        "inductor mounting style",
+        "custom inductor design"
+      ],
+      "products": [
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ],
+        [
+          "Drum Core Inductor Series",
+          "../products/drum-core-inductors.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "toroidal-inductors-vs-drum-core-inductors",
+        "choosing-magnetic-core-material",
+        "how-to-select-power-inductor"
+      ]
+    },
+    {
+      "slug": "high-frequency-transformer-design-guide",
+      "title": "High Frequency Transformer Design Guide",
+      "summary": "The design flow for high frequency transformers: turns ratio, core and bobbin selection, winding loss, insulation coordination and thermal review for switching power supplies.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "high frequency transformer design",
+        "SMPS transformer design",
+        "turns ratio calculation",
+        "transformer core selection",
+        "winding loss",
+        "isolation transformer design"
+      ],
+      "products": [
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ],
+        [
+          "Planar Transformer Series",
+          "../products/planar-transformer.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "high-frequency-transformers-improve-efficiency",
+        "common-causes-transformer-failure",
+        "industrial-applications-high-frequency-transformers"
+      ]
+    },
+    {
+      "slug": "common-causes-transformer-failure",
+      "title": "Common Causes of Transformer Failure",
+      "summary": "Overheating, insulation breakdown, saturation, winding defects and mechanical stress are the usual failure routes in the field. Here is how each one is detected and prevented.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "transformer failure causes",
+        "insulation breakdown",
+        "transformer overheating",
+        "winding short circuit",
+        "transformer quality control"
+      ],
+      "products": [
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ],
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "high-frequency-transformer-design-guide",
+        "inductor-testing-quality-control",
+        "custom-transformer-manufacturing-process"
+      ]
+    },
+    {
+      "slug": "emi-filter-design-basics",
+      "title": "EMI Filter Design Basics for Industrial Electronics",
+      "summary": "Build an EMI filter stage from the noise path outward: separating common mode and differential mode noise, placing chokes and capacitors, controlling grounding and preparing for compliance testing.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "EMI filter design basics",
+        "common mode noise",
+        "differential mode noise",
+        "EMI compliance testing",
+        "industrial EMI filter solutions"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "reduce-emi-switching-power-supplies",
+        "emi-suppression-in-power-supplies",
+        "common-mode-choke-working-principle"
+      ]
+    },
+    {
+      "slug": "emi-suppression-in-power-supplies",
+      "title": "EMI Suppression Techniques in Power Supplies",
+      "summary": "Practical EMI suppression for power supplies using chokes, transformer construction, shielding, layout control and grounding, with the measurements engineers should request from a supplier.",
+      "date": "2026-06-21",
+      "category": "Technical Articles",
+      "keywords": [
+        "EMI suppression power supply",
+        "common mode choke",
+        "transformer shielding",
+        "PCB layout EMI",
+        "conducted emissions"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ],
+        [
+          "Planar Transformer Series",
+          "../products/planar-transformer.html"
+        ]
+      ],
+      "related": [
+        "reduce-emi-switching-power-supplies",
+        "emi-filter-design-basics",
+        "emi-suppression-in-power-electronics"
+      ]
+    },
+    {
+      "slug": "emi-suppression-in-power-electronics",
+      "shortTitle": "EMI Suppression in Power Electronics",
+      "title": "EMI Suppression in Power Electronics: How to Reduce EMI in Power Supply Designs",
+      "summary": "Reduce EMI in power electronics by separating noise modes, controlling switching loops and selecting magnetic components by impedance across frequency rather than inductance alone.",
+      "date": "2026-06-21",
+      "category": "Technical Articles",
+      "keywords": [
+        "EMI suppression power electronics",
+        "switching noise path",
+        "common mode choke selection",
+        "transformer noise path",
+        "EMI filter solutions"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "emi-suppression-in-power-supplies",
+        "emi-filter-design-basics",
+        "reduce-emi-switching-power-supplies"
+      ]
+    },
+    {
+      "slug": "reduce-emi-switching-power-supplies",
+      "title": "How to Reduce EMI in Switching Power Supplies",
+      "summary": "Source, path and victim: a structured way to reduce EMI in switching power supplies through layout discipline, snubbers, magnetic component choice, shielding and cable control.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "reduce EMI switching power supply",
+        "switching noise source",
+        "snubber circuit",
+        "EMI choke",
+        "conducted emission control"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ]
+      ],
+      "related": [
+        "emi-filter-design-basics",
+        "emi-suppression-in-power-supplies",
+        "common-mode-choke-working-principle"
+      ]
+    },
+    {
+      "slug": "high-frequency-transformers-improve-efficiency",
+      "shortTitle": "How High Frequency Transformers Improve Efficiency",
+      "title": "How High Frequency Transformers Improve Power Supply Efficiency",
+      "summary": "Higher switching frequency shrinks magnetics but shifts loss into core and winding. Learn how transformer material, structure and winding choices trade size against efficiency.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "high frequency transformer efficiency",
+        "core loss",
+        "winding loss",
+        "switching frequency trade-off",
+        "SMPS transformer design"
+      ],
+      "products": [
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ],
+        [
+          "Planar Transformer Series",
+          "../products/planar-transformer.html"
+        ],
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ]
+      ],
+      "related": [
+        "high-frequency-transformer-design-guide",
+        "choosing-magnetic-core-material",
+        "industrial-applications-high-frequency-transformers"
+      ]
+    },
+    {
+      "slug": "custom-transformer-manufacturing-process",
+      "title": "Custom Transformer Manufacturing Process",
+      "summary": "From drawing review and bobbin or core selection to winding, impregnation, electrical testing and packing: what actually happens between an RFQ and a delivered custom transformer.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "custom transformer manufacturing",
+        "transformer winding process",
+        "OEM transformer supplier",
+        "transformer sample approval",
+        "transformer quality control"
+      ],
+      "products": [
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ],
+        [
+          "Planar Transformer Series",
+          "../products/planar-transformer.html"
+        ]
+      ],
+      "related": [
+        "common-causes-transformer-failure",
+        "inductor-testing-quality-control",
+        "how-to-select-inductor-manufacturer"
+      ]
+    },
+    {
+      "slug": "inductor-testing-quality-control",
+      "title": "Inductor Testing and Quality Control",
+      "summary": "Inductance, DCR, saturation, hi-pot, temperature rise and visual inspection: the test plan that keeps inductor batches consistent from sample to mass production.",
+      "date": "2026-06-11",
+      "category": "Technical Articles",
+      "keywords": [
+        "inductor testing",
+        "inductor quality control",
+        "inductance measurement",
+        "DCR test",
+        "hi-pot test",
+        "AQL inspection"
+      ],
+      "products": [
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ]
+      ],
+      "related": [
+        "common-causes-transformer-failure",
+        "rohs-reach-compliance-magnetic-components",
+        "custom-transformer-manufacturing-process"
+      ]
+    },
+    {
+      "slug": "power-inductors-solar-inverters",
+      "title": "Power Inductor Series for Solar Inverters",
+      "summary": "Solar inverter magnetics must handle high DC current, wide temperature swing and long service life. See how boost, MPPT and output filter inductors are specified.",
+      "date": "2026-06-11",
+      "category": "Applications",
+      "keywords": [
+        "solar inverter inductor",
+        "PV inverter magnetics",
+        "boost inductor design",
+        "MPPT inductor",
+        "high current inductor"
+      ],
+      "products": [
+        [
+          "High Power Inductor",
+          "../products/high-power-inductor.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Flat Wire Inductor",
+          "../products/flat-wire-inductor.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Solar Inverter Magnetic Components",
+          "../industries/solar-inverter.html"
+        ],
+        [
+          "Applications Overview",
+          "../applications.html"
+        ]
+      ],
+      "related": [
+        "inductor-applications-renewable-energy",
+        "magnetic-components-ev-charging-systems",
+        "understanding-saturation-current-power-inductors"
+      ]
+    },
+    {
+      "slug": "inductor-applications-renewable-energy",
+      "title": "Inductor Applications in Renewable Energy Systems",
+      "summary": "Inductors in solar, wind, storage and charging equipment: current profiles, environmental demands and the specification details that decide whether magnetics survive 20 years in the field.",
+      "date": "2026-06-11",
+      "category": "Applications",
+      "keywords": [
+        "renewable energy inductors",
+        "energy storage inductor",
+        "wind power converter magnetics",
+        "solar inverter magnetics",
+        "high frequency transformer renewable energy"
+      ],
+      "products": [
+        [
+          "High Power Inductor",
+          "../products/high-power-inductor.html"
+        ],
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ],
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Solar Inverter Magnetic Components",
+          "../industries/solar-inverter.html"
+        ],
+        [
+          "Applications Overview",
+          "../applications.html"
+        ]
+      ],
+      "related": [
+        "power-inductors-solar-inverters",
+        "magnetic-components-ev-charging-systems",
+        "custom-magnetic-components-industrial-automation"
+      ]
+    },
+    {
+      "slug": "magnetic-components-ev-charging-systems",
+      "title": "Magnetic Components for EV Charging Systems",
+      "summary": "AC and DC EV charger designs depend on PFC inductors, resonant transformers, common mode chokes and output filter magnetics. Review the selection priorities for each position.",
+      "date": "2026-06-11",
+      "category": "Applications",
+      "keywords": [
+        "EV charger inductors",
+        "EV charging magnetic components",
+        "PFC inductor",
+        "resonant transformer",
+        "DC fast charger magnetics"
+      ],
+      "products": [
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ],
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ]
+      ],
+      "internal": [
+        [
+          "EV Charger Magnetic Components",
+          "../industries/ev-charger.html"
+        ],
+        [
+          "Applications Overview",
+          "../applications.html"
+        ]
+      ],
+      "related": [
+        "inductor-applications-renewable-energy",
+        "power-inductors-solar-inverters",
+        "common-mode-chokes-communication-systems"
+      ]
+    },
+    {
+      "slug": "custom-magnetic-components-industrial-automation",
+      "title": "Custom Magnetic Components for Industrial Automation",
+      "summary": "Automation equipment needs rugged, low-noise magnetics for drives, PLC power stages and sensing circuits. See how custom designs are matched to those constraints.",
+      "date": "2026-06-11",
+      "category": "Applications",
+      "keywords": [
+        "custom magnetic components",
+        "industrial automation magnetics",
+        "motor drive inductor",
+        "PLC power supply transformer",
+        "low noise inductor"
+      ],
+      "products": [
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ],
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ],
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Industrial Power Supply Magnetics",
+          "../industries/industrial-power-supply.html"
+        ],
+        [
+          "Applications Overview",
+          "../applications.html"
+        ]
+      ],
+      "related": [
+        "custom-transformer-manufacturing-process",
+        "industrial-applications-high-frequency-transformers",
+        "magnetic-components-ev-charging-systems"
+      ]
+    },
+    {
+      "slug": "industrial-applications-high-frequency-transformers",
+      "shortTitle": "Industrial High Frequency Transformer Technology",
+      "title": "Industrial Applications of High Frequency Transformers",
+      "summary": "Where high frequency transformers do the work in industry: switch-mode supplies, welding, medical, telecom and motor drive auxiliaries, with selection notes for each application.",
+      "date": "2026-06-11",
+      "category": "Applications",
+      "keywords": [
+        "industrial high frequency transformer",
+        "welding power supply transformer",
+        "isolation transformer",
+        "motor drive auxiliary supply",
+        "industrial power supply magnetics"
+      ],
+      "products": [
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ],
+        [
+          "Planar Transformer Series",
+          "../products/planar-transformer.html"
+        ],
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Industrial Power Supply Magnetics",
+          "../industries/industrial-power-supply.html"
+        ],
+        [
+          "Factory Capability",
+          "../factory.html"
+        ]
+      ],
+      "related": [
+        "high-frequency-transformer-design-guide",
+        "high-frequency-transformers-improve-efficiency",
+        "custom-magnetic-components-industrial-automation"
+      ]
+    },
+    {
+      "slug": "common-mode-chokes-communication-systems",
+      "title": "How Common Mode Chokes Protect Communication Systems",
+      "summary": "Communication and data lines pick up common mode noise from cables, grounds and nearby power stages. Chokes, impedance balance and layout practice keep the signal path clean.",
+      "date": "2026-06-11",
+      "category": "Applications",
+      "keywords": [
+        "common mode choke communication systems",
+        "data line EMI",
+        "signal line choke",
+        "telecom EMI filter",
+        "impedance balance"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "SMD Inductor Series",
+          "../products/smd-inductors.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Telecom EMI Filter Solutions",
+          "../industries/telecom-emi.html"
+        ],
+        [
+          "Applications Overview",
+          "../applications.html"
+        ]
+      ],
+      "related": [
+        "common-mode-choke-working-principle",
+        "emi-filter-design-basics",
+        "magnetic-components-ev-charging-systems"
+      ]
+    },
+    {
+      "slug": "how-to-select-inductor-manufacturer",
+      "title": "How to Select an Inductor Manufacturer",
+      "summary": "Supplier selection criteria for magnetic components: engineering response, sample capability, quality system, production capacity, compliance documents and long-term cost stability.",
+      "date": "2026-06-11",
+      "category": "Industry Trends",
+      "keywords": [
+        "inductor manufacturer selection",
+        "magnetic component supplier",
+        "China inductor factory",
+        "supplier audit",
+        "OEM magnetic components"
+      ],
+      "products": [
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Factory Capability",
+          "../factory.html"
+        ],
+        [
+          "Quality Certificates",
+          "../certificates.html"
+        ]
+      ],
+      "related": [
+        "rohs-reach-compliance-magnetic-components",
+        "inductor-testing-quality-control",
+        "custom-transformer-manufacturing-process"
+      ]
+    },
+    {
+      "slug": "rohs-reach-compliance-magnetic-components",
+      "title": "RoHS and REACH Compliance for Magnetic Components",
+      "summary": "What RoHS, REACH and material declaration requests mean for inductors and transformers, and which documents buyers should collect before approving a magnetic component supplier.",
+      "date": "2026-06-11",
+      "category": "Industry Trends",
+      "keywords": [
+        "RoHS magnetic components",
+        "REACH compliance",
+        "material declaration",
+        "conflict minerals",
+        "compliance documentation"
+      ],
+      "products": [
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ],
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Quality Certificates",
+          "../certificates.html"
+        ],
+        [
+          "Downloads",
+          "../downloads.html"
+        ]
+      ],
+      "related": [
+        "how-to-select-inductor-manufacturer",
+        "inductor-testing-quality-control",
+        "custom-transformer-manufacturing-process"
+      ]
+    },
+    {
+      "slug": "miden-factory-capability-update",
+      "shortTitle": "Factory Capability and Quality Update",
+      "title": "Factory Capability and Quality Update for Custom Magnetic Components",
+      "summary": "A look at the production base behind MiDEN magnetics: 500,000 pcs/day capacity, ISO9001:2015 quality management, in-house engineering and OEM/ODM sample support.",
+      "date": "2026-09-28",
+      "category": "Company Updates",
+      "keywords": [
+        "MiDEN factory",
+        "magnetic component manufacturer China",
+        "ISO9001 inductor factory",
+        "custom magnetic components manufacturer",
+        "OEM ODM magnetics"
+      ],
+      "products": [
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "High-Frequency Transformers",
+          "../products/high-frequency-transformers.html"
+        ]
+      ],
+      "internal": [
+        [
+          "Factory Capability",
+          "../factory.html"
+        ],
+        [
+          "Quality Certificates",
+          "../certificates.html"
+        ]
+      ],
+      "related": [
+        "how-to-select-inductor-manufacturer",
+        "custom-transformer-manufacturing-process",
+        "rohs-reach-compliance-magnetic-components"
+      ],
+      "takeaways": [
+        "MiDEN runs two manufacturing bases in Guangzhou and Suining with roughly 500,000 pieces per day of magnetic component capacity.",
+        "The quality system is organized around ISO9001:2015, with incoming material control, process inspection and documented electrical testing.",
+        "Fifteen in-house engineers review drawings, current waveforms, saturation margin and thermal limits before a custom part is quoted.",
+        "Sample-first development keeps the approved sample, drawing and agreed test items as the production reference for every batch."
+      ]
+    }
+  ]
+}

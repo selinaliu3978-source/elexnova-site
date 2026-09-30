@@ -1,0 +1,113 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://elexnova.com/scripts/technical-insights/payload.schema.json",
+  "title": "Elexnova Technical Insights article payload",
+  "description": "Contract used by the n8n automation to create or update one article in the Technical Insights content center. The payload is validated by scripts/technical-insights/add-article.js before anything is written.",
+  "type": "object",
+  "required": ["slug", "title", "summary", "date", "category", "keywords", "body"],
+  "additionalProperties": false,
+  "properties": {
+    "slug": {
+      "type": "string",
+      "description": "URL file name without extension. Lowercase letters, numbers and hyphens only. The article URL becomes https://elexnova.com/news/<slug>.html",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 3,
+      "maxLength": 80
+    },
+    "title": {
+      "type": "string",
+      "description": "Editorial title. Rendered as the visible <h1>, the breadcrumb and the Article headline.",
+      "minLength": 10,
+      "maxLength": 120
+    },
+    "shortTitle": {
+      "type": "string",
+      "description": "Optional shorter stem for the browser/SEO <title> tag: `<shortTitle|title> | MiDEN Electronics`. Use it when the editorial title is too long for search results.",
+      "maxLength": 60
+    },
+    "summary": {
+      "type": "string",
+      "description": "One or two sentence summary shown on the hub card, the RSS item and the articles.json index.",
+      "minLength": 40,
+      "maxLength": 320
+    },
+    "lead": {
+      "type": "string",
+      "description": "Optional opening paragraph HTML placed directly under the H1.",
+      "maxLength": 1200
+    },
+    "body": {
+      "type": "string",
+      "description": "Article body HTML. Use <h2> for sections, <p> for paragraphs, <ul>/<ol> for lists and <a href> for internal links. At least two <h2> sections are required.",
+      "minLength": 600
+    },
+    "date": {
+      "type": "string",
+      "description": "Publish date in YYYY-MM-DD format.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "updated": {
+      "type": "string",
+      "description": "Optional last update date in YYYY-MM-DD format. Defaults to the publish date.",
+      "pattern": "^[0-9]{4}-[0-9]{2}-[0-9]{2}$"
+    },
+    "category": {
+      "type": "string",
+      "description": "Editorial category. Must match one of the categories defined in assets/data/technical-insights.json.",
+      "enum": ["Technical Articles", "Applications", "Industry Trends", "Company Updates"]
+    },
+    "keywords": {
+      "type": "array",
+      "description": "Focus keywords. Written to <meta name=\"keywords\">, the Article schema and the on-page keyword list.",
+      "minItems": 3,
+      "maxItems": 12,
+      "items": { "type": "string", "minLength": 2, "maxLength": 60 }
+    },
+    "takeaways": {
+      "type": "array",
+      "description": "Optional key takeaway bullets rendered in the highlighted box above the table of contents.",
+      "minItems": 3,
+      "maxItems": 6,
+      "items": { "type": "string", "minLength": 20, "maxLength": 220 }
+    },
+    "author": {
+      "type": "string",
+      "description": "Optional author name. Defaults to 'MiDEN Engineering Team'.",
+      "maxLength": 80
+    },
+    "products": {
+      "type": "array",
+      "description": "Optional related product links as [label, href] pairs, for example [\"Power Inductor Series\", \"../products/power-inductor.html\"].",
+      "maxItems": 6,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": { "type": "string" }
+      }
+    },
+    "internal": {
+      "type": "array",
+      "description": "Optional extra internal links as [label, href] pairs, for example [\"Solar Inverter Magnetics\", \"../industries/solar-inverter.html\"].",
+      "maxItems": 6,
+      "items": {
+        "type": "array",
+        "minItems": 2,
+        "maxItems": 2,
+        "items": { "type": "string" }
+      }
+    },
+    "related": {
+      "type": "array",
+      "description": "Optional slugs of related Technical Insights articles shown in the 'Continue reading' block.",
+      "maxItems": 4,
+      "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$" }
+    },
+    "status": {
+      "type": "string",
+      "description": "published keeps the article in the hub, sitemap, feed and articles.json. draft renders the page as noindex and hides it from all listings.",
+      "enum": ["published", "draft"],
+      "default": "published"
+    }
+  }
+}

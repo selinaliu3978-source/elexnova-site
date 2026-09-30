@@ -1,0 +1,531 @@
+/* ==========================================================================
+   Technical Insights - Elexnova / MiDEN content center for /news/
+   Scoped stylesheet: loaded only by the Technical Insights hub and the
+   /news/ article pages, so no other page on the site is affected.
+   ========================================================================== */
+
+/* ---------- Hub hero actions ---------- */
+.ti-hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.ti-hero-actions .btn {
+  border-color: #ffffff;
+  background: #ffffff;
+  color: var(--blue-dark);
+}
+
+.ti-hero-actions .btn.secondary {
+  border-color: rgba(255, 255, 255, .8);
+  background: rgba(255, 255, 255, .12);
+  color: #ffffff;
+}
+
+/* ---------- Hub toolbar / category filter ---------- */
+.ti-hub-intro {
+  margin-bottom: 30px;
+}
+
+.ti-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0 0 26px;
+}
+
+.ti-toolbar-label {
+  margin-right: 4px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+
+.ti-filter {
+  min-height: 40px;
+  padding: 9px 16px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--white);
+  color: var(--blue-dark);
+  font: inherit;
+  font-size: 14px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: background .2s ease, color .2s ease, border-color .2s ease;
+}
+
+.ti-filter:hover {
+  border-color: #c7dced;
+  background: #f1f7fd;
+}
+
+.ti-filter[aria-pressed="true"] {
+  border-color: var(--blue-dark);
+  background: var(--blue-dark);
+  color: #ffffff;
+}
+
+.ti-count {
+  margin-left: auto;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.ti-empty {
+  display: none;
+  padding: 22px;
+  border: 1px dashed var(--line);
+  border-radius: 8px;
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.ti-empty.is-visible {
+  display: block;
+}
+
+/* ---------- Hub article cards ---------- */
+.ti-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.news-card.ti-card > a {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  height: 100%;
+  min-height: 100%;
+  padding: 24px;
+  text-decoration: none;
+}
+
+.ti-card .ti-card-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.ti-card .ti-card-summary {
+  margin: 0;
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.ti-card .ti-card-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-top: auto;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.ti-card .ti-readmore {
+  color: var(--blue);
+  font-weight: 800;
+}
+
+.ti-card:hover .ti-readmore {
+  text-decoration: underline;
+}
+
+/* Badges: chained selectors keep the site-wide card span styles from winning */
+.ti-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 26px;
+  padding: 4px 11px;
+  border-radius: 999px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.ti-badge,
+.news-card .ti-badge,
+.article-page .ti-badge {
+  border: 1px solid #c8ddeb;
+  background: #eef6fd;
+  color: var(--blue-dark);
+}
+
+.ti-badge[data-category="applications"],
+.news-card .ti-badge[data-category="applications"],
+.article-page .ti-badge[data-category="applications"] {
+  border-color: #cfe6d6;
+  background: #eef9f1;
+  color: #1c6b3c;
+}
+
+.ti-badge[data-category="industry-trends"],
+.news-card .ti-badge[data-category="industry-trends"],
+.article-page .ti-badge[data-category="industry-trends"] {
+  border-color: #ecd9b8;
+  background: #fdf5e7;
+  color: #8a5a11;
+}
+
+.ti-badge[data-category="company-updates"],
+.news-card .ti-badge[data-category="company-updates"],
+.article-page .ti-badge[data-category="company-updates"] {
+  border-color: #d8d3ee;
+  background: #f2f0fd;
+  color: #4335a0;
+}
+
+.article-page a.ti-badge {
+  font-weight: 800;
+}
+
+/* ---------- Hub category overview ---------- */
+.ti-category-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.ti-category-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 22px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  text-decoration: none;
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.ti-category-card:hover {
+  border-color: #c7dced;
+  box-shadow: 0 14px 32px rgba(11, 58, 103, .09);
+}
+
+.ti-category-card h3 {
+  margin: 0;
+  color: var(--blue-dark);
+  font-size: 17px;
+  line-height: 1.3;
+}
+
+.ti-category-card p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.ti-category-card span {
+  color: var(--blue);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+/* ---------- Article page: meta bar ---------- */
+.article-page .ti-article-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ---------- Article page: related insights + resources + CTA ---------- */
+.article-page .ti-related,
+.article-page .ti-links {
+  margin-top: 46px;
+  padding: 30px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: #f7fafd;
+}
+
+.article-page .ti-related h2,
+.article-page .ti-links h2,
+.article-page .ti-takeaways h2,
+.article-page .ti-cta h2 {
+  width: auto;
+  max-width: 100%;
+  margin-top: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--blue-dark);
+}
+
+.ti-related-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 18px;
+}
+
+.article-page .ti-related-grid > a {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--white);
+  color: var(--blue-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.article-page .ti-related-grid > a:hover {
+  border-color: #c7dced;
+  box-shadow: 0 10px 26px rgba(11, 58, 103, .08);
+}
+
+.ti-related-grid strong {
+  color: var(--blue-dark);
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.ti-related-grid .ti-card-summary {
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+.ti-product-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 18px 0 0;
+}
+
+.article-page .ti-product-links a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid #c8ddeb;
+  border-radius: 6px;
+  background: var(--white);
+  color: var(--blue-dark);
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+
+.article-page .ti-product-links a:hover {
+  border-color: var(--blue);
+  background: #eef6fd;
+}
+
+.ti-keywords {
+  margin-top: 20px;
+}
+
+/* Dark CTA panels (article pages and hub) */
+.article-page .ti-cta,
+.ti-hub-cta {
+  margin-top: 46px;
+  padding: 32px;
+  border-radius: 8px;
+  background: var(--blue-dark);
+  color: #ffffff;
+}
+
+.ti-hub-cta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-top: 0;
+}
+
+.ti-hub-cta > div:first-child {
+  flex: 1 1 340px;
+}
+
+.article-page .ti-cta h2,
+.ti-hub-cta h2 {
+  margin: 0 0 12px;
+  color: #ffffff;
+  font-size: clamp(23px, 2.4vw, 31px);
+}
+
+.article-page .ti-cta p,
+.ti-hub-cta p {
+  margin: 0 0 4px;
+  color: #d7e6f5;
+}
+
+.article-page .ti-cta .eyebrow,
+.ti-hub-cta .eyebrow {
+  color: #a8c9e8;
+  font-size: 16px;
+}
+
+.ti-cta .case-conversion-actions,
+.ti-hub-cta .case-conversion-actions {
+  margin-top: 22px;
+}
+
+.ti-hub-cta .case-conversion-actions {
+  margin-top: 0;
+}
+
+.ti-cta .case-conversion-actions .btn,
+.ti-hub-cta .case-conversion-actions .btn {
+  border: 1px solid #ffffff;
+  background: #ffffff;
+  color: var(--blue-dark);
+}
+
+.ti-cta .case-conversion-actions .btn.secondary,
+.ti-hub-cta .case-conversion-actions .btn.secondary {
+  border: 1px solid rgba(255, 255, 255, .7);
+  background: transparent;
+  color: #ffffff;
+}
+
+.ti-cta .case-conversion-actions .btn.secondary:hover,
+.ti-hub-cta .case-conversion-actions .btn.secondary:hover {
+  background: rgba(255, 255, 255, .14);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 980px) {
+  .ti-category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ti-related-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .ti-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .article-page .ti-related,
+  .article-page .ti-links,
+  .article-page .ti-cta,
+  .ti-hub-cta {
+    padding: 22px;
+  }
+
+  .ti-count {
+    margin-left: 0;
+  }
+}/* Filter panels keep [hidden] cards hidden even though .ti-card sets display */
+.ti-card[hidden] {
+  display: none;
+}
+/* ---------- Article page: table of contents + key takeaways ---------- */
+.article-page h2[id] {
+  scroll-margin-top: 96px;
+}
+
+.article-page .ti-toc {
+  margin: 0 0 34px;
+  padding: 22px 26px;
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--blue);
+  border-radius: 8px;
+  background: #f7fafd;
+}
+
+.article-page .ti-toc .eyebrow {
+  margin: 0 0 10px;
+}
+
+.article-page .ti-toc ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 22px;
+}
+
+.article-page .ti-toc li {
+  color: var(--muted);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.article-page .ti-toc a {
+  color: var(--blue-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.article-page .ti-toc a:hover {
+  text-decoration: underline;
+}
+
+.article-page .ti-takeaways {
+  margin: 0 0 34px;
+  padding: 24px 26px;
+  border: 1px solid #cfe6d6;
+  border-radius: 8px;
+  background: #f2faf5;
+}
+
+.article-page .ti-takeaways h2 {
+  margin-bottom: 14px;
+  font-size: 20px;
+}
+
+.article-page .ti-takeaways ul {
+  display: grid;
+  gap: 9px;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.article-page .ti-takeaways li {
+  color: #33513f;
+  font-size: 15px;
+  line-height: 1.62;
+}
+
+.ti-draft {
+  padding: 4px 10px;
+  border: 1px solid #f0bfbf;
+  border-radius: 999px;
+  background: #fdecec;
+  color: #a12727;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+/* Breadcrumb separator when the hub crumb is a link, not a span */
+.article-page .breadcrumbs a + a::before {
+  content: "/";
+  margin-right: 8px;
+  color: #9aa8b4;
+}

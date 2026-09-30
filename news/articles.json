@@ -1,0 +1,533 @@
+{
+  "generated": "2026-09-30",
+  "hub": {
+    "url": "https://elexnova.com/news.html",
+    "mirror": "https://elexnova.com/news/",
+    "title": "Technical Insights | Inductor, Transformer and EMI Engineering Articles",
+    "h1": "Technical Insights for Magnetic Component Engineers"
+  },
+  "categories": [
+    {
+      "name": "Technical Articles",
+      "slug": "technical-articles",
+      "description": "Component selection, core material, winding, loss and reliability know-how for inductors, chokes and transformers.",
+      "count": 18
+    },
+    {
+      "name": "Applications",
+      "slug": "applications",
+      "description": "How magnetic components behave in solar, EV charging, industrial automation, telecom and power supply designs.",
+      "count": 6
+    },
+    {
+      "name": "Industry Trends",
+      "slug": "industry-trends",
+      "description": "Sourcing, compliance, quality systems and supply chain topics that affect magnetic component projects.",
+      "count": 2
+    },
+    {
+      "name": "Company Updates",
+      "slug": "company-updates",
+      "description": "Factory capability, quality system, capacity and service updates from the MiDEN manufacturing team.",
+      "count": 1
+    }
+  ],
+  "count": 27,
+  "articles": [
+    {
+      "slug": "miden-factory-capability-update",
+      "url": "https://elexnova.com/news/miden-factory-capability-update.html",
+      "title": "Factory Capability and Quality Update for Custom Magnetic Components",
+      "summary": "A look at the production base behind MiDEN magnetics: 500,000 pcs/day capacity, ISO9001:2015 quality management, in-house engineering and OEM/ODM sample support.",
+      "date": "2026-09-28",
+      "updated": "2026-09-28",
+      "category": "Company Updates",
+      "categorySlug": "company-updates",
+      "keywords": [
+        "MiDEN factory",
+        "magnetic component manufacturer China",
+        "ISO9001 inductor factory",
+        "custom magnetic components manufacturer",
+        "OEM ODM magnetics"
+      ],
+      "readingMinutes": 4
+    },
+    {
+      "slug": "common-mode-choke-vs-differential-mode-choke",
+      "url": "https://elexnova.com/news/common-mode-choke-vs-differential-mode-choke.html",
+      "title": "Common Mode Choke vs Differential Mode Choke: Selection Guide",
+      "summary": "Compare noise paths, magnetic structures and impedance behavior to decide when a common mode choke, a differential mode inductor or a combined filter stage is the right answer.",
+      "date": "2026-06-21",
+      "updated": "2026-06-21",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "common mode choke vs differential mode choke",
+        "differential mode inductor",
+        "EMI filter stages",
+        "line to ground noise",
+        "choke selection guide"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "slug": "common-mode-choke-working-principle",
+      "url": "https://elexnova.com/news/common-mode-choke-working-principle.html",
+      "title": "Common Mode Choke Working Principle for EMI Filter Solutions",
+      "summary": "How a common mode choke uses flux cancellation to block common mode noise while carrying load current, and which impedance, current and balance data should be checked before selection.",
+      "date": "2026-06-21",
+      "updated": "2026-06-21",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "common mode choke working principle",
+        "flux cancellation",
+        "common mode noise",
+        "EMI filter design",
+        "leakage current limit",
+        "common mode choke factory"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "slug": "emi-suppression-in-power-electronics",
+      "url": "https://elexnova.com/news/emi-suppression-in-power-electronics.html",
+      "title": "EMI Suppression in Power Electronics: How to Reduce EMI in Power Supply Designs",
+      "summary": "Reduce EMI in power electronics by separating noise modes, controlling switching loops and selecting magnetic components by impedance across frequency rather than inductance alone.",
+      "date": "2026-06-21",
+      "updated": "2026-06-21",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "EMI suppression power electronics",
+        "switching noise path",
+        "common mode choke selection",
+        "transformer noise path",
+        "EMI filter solutions"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "slug": "emi-suppression-in-power-supplies",
+      "url": "https://elexnova.com/news/emi-suppression-in-power-supplies.html",
+      "title": "EMI Suppression Techniques in Power Supplies",
+      "summary": "Practical EMI suppression for power supplies using chokes, transformer construction, shielding, layout control and grounding, with the measurements engineers should request from a supplier.",
+      "date": "2026-06-21",
+      "updated": "2026-06-21",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "EMI suppression power supply",
+        "common mode choke",
+        "transformer shielding",
+        "PCB layout EMI",
+        "conducted emissions"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "slug": "how-to-select-power-inductor-for-dc-dc-converter",
+      "url": "https://elexnova.com/news/how-to-select-power-inductor-for-dc-dc-converter.html",
+      "title": "How to Choose a Power Inductor for a DC-DC Converter",
+      "summary": "Ripple current, saturation current, thermal rise and DCR explained for buck, boost and buck-boost designs, plus the specification sheet a magnetics factory needs to quote accurately.",
+      "date": "2026-06-21",
+      "updated": "2026-06-21",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "power inductor for DC-DC converter",
+        "buck converter inductor",
+        "inductor ripple current",
+        "inductor thermal design",
+        "saturation current margin",
+        "inductor RFQ"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "slug": "toroidal-vs-drum-core-inductors",
+      "url": "https://elexnova.com/news/toroidal-vs-drum-core-inductors.html",
+      "title": "Toroidal vs Drum Core Inductors: Which Structure Fits Your Application?",
+      "summary": "Choose between toroidal and drum core structures by magnetic containment, manufacturability, cost, board space and the thermal demand of the application.",
+      "date": "2026-06-21",
+      "updated": "2026-06-21",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "toroidal vs drum core inductors",
+        "inductor structure selection",
+        "magnetic flux containment",
+        "inductor mounting style",
+        "custom inductor design"
+      ],
+      "readingMinutes": 5
+    },
+    {
+      "slug": "choosing-magnetic-core-material",
+      "url": "https://elexnova.com/news/choosing-magnetic-core-material.html",
+      "title": "Choosing the Right Magnetic Core Material",
+      "summary": "Ferrite, iron powder, alloy powder and tape-wound cores compared by permeability, core loss, saturation behavior, temperature stability and cost for a given switching frequency.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "magnetic core material",
+        "ferrite core",
+        "iron powder core",
+        "alloy powder core",
+        "core loss",
+        "permeability selection",
+        "inductor core selection"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "common-causes-transformer-failure",
+      "url": "https://elexnova.com/news/common-causes-transformer-failure.html",
+      "title": "Common Causes of Transformer Failure",
+      "summary": "Overheating, insulation breakdown, saturation, winding defects and mechanical stress are the usual failure routes in the field. Here is how each one is detected and prevented.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "transformer failure causes",
+        "insulation breakdown",
+        "transformer overheating",
+        "winding short circuit",
+        "transformer quality control"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "custom-magnetic-components-industrial-automation",
+      "url": "https://elexnova.com/news/custom-magnetic-components-industrial-automation.html",
+      "title": "Custom Magnetic Components for Industrial Automation",
+      "summary": "Automation equipment needs rugged, low-noise magnetics for drives, PLC power stages and sensing circuits. See how custom designs are matched to those constraints.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "custom magnetic components",
+        "industrial automation magnetics",
+        "motor drive inductor",
+        "PLC power supply transformer",
+        "low noise inductor"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "custom-transformer-manufacturing-process",
+      "url": "https://elexnova.com/news/custom-transformer-manufacturing-process.html",
+      "title": "Custom Transformer Manufacturing Process",
+      "summary": "From drawing review and bobbin or core selection to winding, impregnation, electrical testing and packing: what actually happens between an RFQ and a delivered custom transformer.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "custom transformer manufacturing",
+        "transformer winding process",
+        "OEM transformer supplier",
+        "transformer sample approval",
+        "transformer quality control"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "emi-filter-design-basics",
+      "url": "https://elexnova.com/news/emi-filter-design-basics.html",
+      "title": "EMI Filter Design Basics for Industrial Electronics",
+      "summary": "Build an EMI filter stage from the noise path outward: separating common mode and differential mode noise, placing chokes and capacitors, controlling grounding and preparing for compliance testing.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "EMI filter design basics",
+        "common mode noise",
+        "differential mode noise",
+        "EMI compliance testing",
+        "industrial EMI filter solutions"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "high-frequency-transformer-design-guide",
+      "url": "https://elexnova.com/news/high-frequency-transformer-design-guide.html",
+      "title": "High Frequency Transformer Design Guide",
+      "summary": "The design flow for high frequency transformers: turns ratio, core and bobbin selection, winding loss, insulation coordination and thermal review for switching power supplies.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "high frequency transformer design",
+        "SMPS transformer design",
+        "turns ratio calculation",
+        "transformer core selection",
+        "winding loss",
+        "isolation transformer design"
+      ],
+      "readingMinutes": 6
+    },
+    {
+      "slug": "common-mode-chokes-communication-systems",
+      "url": "https://elexnova.com/news/common-mode-chokes-communication-systems.html",
+      "title": "How Common Mode Chokes Protect Communication Systems",
+      "summary": "Communication and data lines pick up common mode noise from cables, grounds and nearby power stages. Chokes, impedance balance and layout practice keep the signal path clean.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "common mode choke communication systems",
+        "data line EMI",
+        "signal line choke",
+        "telecom EMI filter",
+        "impedance balance"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "high-frequency-transformers-improve-efficiency",
+      "url": "https://elexnova.com/news/high-frequency-transformers-improve-efficiency.html",
+      "title": "How High Frequency Transformers Improve Power Supply Efficiency",
+      "summary": "Higher switching frequency shrinks magnetics but shifts loss into core and winding. Learn how transformer material, structure and winding choices trade size against efficiency.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "high frequency transformer efficiency",
+        "core loss",
+        "winding loss",
+        "switching frequency trade-off",
+        "SMPS transformer design"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "reduce-emi-switching-power-supplies",
+      "url": "https://elexnova.com/news/reduce-emi-switching-power-supplies.html",
+      "title": "How to Reduce EMI in Switching Power Supplies",
+      "summary": "Source, path and victim: a structured way to reduce EMI in switching power supplies through layout discipline, snubbers, magnetic component choice, shielding and cable control.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "reduce EMI switching power supply",
+        "switching noise source",
+        "snubber circuit",
+        "EMI choke",
+        "conducted emission control"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "how-to-select-power-inductor",
+      "url": "https://elexnova.com/news/how-to-select-power-inductor.html",
+      "title": "How to Select a Power Inductor for DC-DC Converters",
+      "summary": "A step-by-step selection method for DC-DC power inductors: inductance from ripple current, saturation and thermal margin, DCR loss, shielding and the data a supplier needs for a fast quotation.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "power inductor selection",
+        "DC-DC converter inductor",
+        "inductor saturation current",
+        "ripple current calculation",
+        "inductor DCR loss",
+        "shielded power inductor",
+        "power inductor manufacturer"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "how-to-select-inductor-manufacturer",
+      "url": "https://elexnova.com/news/how-to-select-inductor-manufacturer.html",
+      "title": "How to Select an Inductor Manufacturer",
+      "summary": "Supplier selection criteria for magnetic components: engineering response, sample capability, quality system, production capacity, compliance documents and long-term cost stability.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Industry Trends",
+      "categorySlug": "industry-trends",
+      "keywords": [
+        "inductor manufacturer selection",
+        "magnetic component supplier",
+        "China inductor factory",
+        "supplier audit",
+        "OEM magnetic components"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "inductor-applications-renewable-energy",
+      "url": "https://elexnova.com/news/inductor-applications-renewable-energy.html",
+      "title": "Inductor Applications in Renewable Energy Systems",
+      "summary": "Inductors in solar, wind, storage and charging equipment: current profiles, environmental demands and the specification details that decide whether magnetics survive 20 years in the field.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "renewable energy inductors",
+        "energy storage inductor",
+        "wind power converter magnetics",
+        "solar inverter magnetics",
+        "high frequency transformer renewable energy"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "inductor-testing-quality-control",
+      "url": "https://elexnova.com/news/inductor-testing-quality-control.html",
+      "title": "Inductor Testing and Quality Control",
+      "summary": "Inductance, DCR, saturation, hi-pot, temperature rise and visual inspection: the test plan that keeps inductor batches consistent from sample to mass production.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "inductor testing",
+        "inductor quality control",
+        "inductance measurement",
+        "DCR test",
+        "hi-pot test",
+        "AQL inspection"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "industrial-applications-high-frequency-transformers",
+      "url": "https://elexnova.com/news/industrial-applications-high-frequency-transformers.html",
+      "title": "Industrial Applications of High Frequency Transformers",
+      "summary": "Where high frequency transformers do the work in industry: switch-mode supplies, welding, medical, telecom and motor drive auxiliaries, with selection notes for each application.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "industrial high frequency transformer",
+        "welding power supply transformer",
+        "isolation transformer",
+        "motor drive auxiliary supply",
+        "industrial power supply magnetics"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "magnetic-components-ev-charging-systems",
+      "url": "https://elexnova.com/news/magnetic-components-ev-charging-systems.html",
+      "title": "Magnetic Components for EV Charging Systems",
+      "summary": "AC and DC EV charger designs depend on PFC inductors, resonant transformers, common mode chokes and output filter magnetics. Review the selection priorities for each position.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "EV charger inductors",
+        "EV charging magnetic components",
+        "PFC inductor",
+        "resonant transformer",
+        "DC fast charger magnetics"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "power-inductors-solar-inverters",
+      "url": "https://elexnova.com/news/power-inductors-solar-inverters.html",
+      "title": "Power Inductor Series for Solar Inverters",
+      "summary": "Solar inverter magnetics must handle high DC current, wide temperature swing and long service life. See how boost, MPPT and output filter inductors are specified.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "solar inverter inductor",
+        "PV inverter magnetics",
+        "boost inductor design",
+        "MPPT inductor",
+        "high current inductor"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "rohs-reach-compliance-magnetic-components",
+      "url": "https://elexnova.com/news/rohs-reach-compliance-magnetic-components.html",
+      "title": "RoHS and REACH Compliance for Magnetic Components",
+      "summary": "What RoHS, REACH and material declaration requests mean for inductors and transformers, and which documents buyers should collect before approving a magnetic component supplier.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Industry Trends",
+      "categorySlug": "industry-trends",
+      "keywords": [
+        "RoHS magnetic components",
+        "REACH compliance",
+        "material declaration",
+        "conflict minerals",
+        "compliance documentation"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "toroidal-inductors-vs-drum-core-inductors",
+      "url": "https://elexnova.com/news/toroidal-inductors-vs-drum-core-inductors.html",
+      "title": "Toroidal Inductors vs Drum Core Inductors",
+      "summary": "A structure-level comparison of toroidal and drum core inductors covering stray magnetic field, winding cost, mounting style, thermal behavior and typical application fit.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "toroidal inductor vs drum core inductor",
+        "stray magnetic field",
+        "inductor winding cost",
+        "through-hole inductor",
+        "inductor structure selection"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "understanding-saturation-current-power-inductors",
+      "url": "https://elexnova.com/news/understanding-saturation-current-power-inductors.html",
+      "title": "Understanding Saturation Current in Power Inductor Series",
+      "summary": "What saturation current, rated current and temperature rise really mean on a datasheet, and how much inductance roll-off a high current converter can tolerate before performance drops.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "saturation current",
+        "inductor rated current",
+        "inductance roll-off",
+        "soft saturation core",
+        "power inductor datasheet",
+        "high current inductor"
+      ],
+      "readingMinutes": 7
+    },
+    {
+      "slug": "power-inductor-vs-common-mode-choke",
+      "url": "https://elexnova.com/news/power-inductor-vs-common-mode-choke.html",
+      "title": "What Is the Difference Between a Power Inductor and a Common Mode Choke",
+      "summary": "Both are wound magnetic components, but current path, core behavior, saturation limits and selection criteria are different. Here is how to avoid mixing them up in a bill of materials.",
+      "date": "2026-06-11",
+      "updated": "2026-06-11",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "power inductor vs common mode choke",
+        "magnetic component difference",
+        "energy storage inductor",
+        "EMI choke",
+        "filter inductor selection"
+      ],
+      "readingMinutes": 7
+    }
+  ]
+}
