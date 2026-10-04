@@ -1045,6 +1045,51 @@
         "Fifteen in-house engineers review drawings, current waveforms, saturation margin and thermal limits before a custom part is quoted.",
         "Sample-first development keeps the approved sample, drawing and agreed test items as the production reference for every batch."
       ]
+    },
+    {
+      "slug": "ev-charger-power-inductor-selection",
+      "title": "EV Charger Power Inductor Selection Guide",
+      "summary": "A position-by-position method for EV charger power inductor selection: the PFC boost choke, the isolated DC/DC output inductor and the auxiliary rails, each with the ripple target, saturation definition and thermal condition a buyer should quote.",
+      "date": "2026-10-04",
+      "category": "Applications",
+      "keywords": [
+        "ev charger power inductor",
+        "power inductor selection for ev chargers",
+        "pfc boost inductor thermal design",
+        "ev charger dc dc inductor",
+        "high current inductor saturation margin",
+        "inductor ripple current ratio"
+      ],
+      "products": [
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Toroidal Inductor Series",
+          "../products/toroidal-inductors.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "understanding-saturation-current-power-inductors",
+        "how-to-select-power-inductor",
+        "magnetic-components-ev-charging-systems"
+      ],
+      "internal": [
+        [
+          "EV Charger Magnetic Components",
+          "../industries/ev-charger.html"
+        ]
+      ],
+      "takeaways": [
+        "Size each magnetic position separately: the PFC choke is set by ripple ratio at peak line, the DC-DC inductor by ripple at rated load, and the auxiliary rail by load-step response.",
+        "Define saturation as an inductance drop at a stated DC bias, then keep roughly 20 to 30 percent headroom above the worst-case peak current.",
+        "Quote the thermal condition with the enquiry, because the same part can be comfortable at 25 C ambient and marginal at 55 C inside a sealed charger."
+      ]
     }
   ]
 }

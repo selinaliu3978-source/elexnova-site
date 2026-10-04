@@ -1,0 +1,153 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>EV Charger Power Inductor Selection Guide | MiDEN Electronics</title><meta name="description" content="EV charger power inductor selection is a per-stage decision: set the ripple ratio, saturation definition and thermal margin, then quote the RFQ checklist.">
+<link rel="canonical" href="https://elexnova.com/news/ev-charger-power-inductor-selection.html"><link rel="stylesheet" href="../assets/css/styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":"https://elexnova.com/news/ev-charger-power-inductor-selection.html#article","headline":"EV Charger Power Inductor Selection Guide","description":"EV charger power inductor selection is a per-stage decision: set the ripple ratio, saturation definition and thermal margin, then quote the RFQ checklist.","keywords":"ev charger power inductor, power inductor selection for ev chargers, pfc boost inductor thermal design, ev charger dc dc inductor, high current inductor saturation margin, inductor ripple current ratio","articleSection":"Applications","inLanguage":"en","datePublished":"2026-10-04","dateModified":"2026-10-04","url":"https://elexnova.com/news/ev-charger-power-inductor-selection.html","author":{"@type":"Organization","name":"MiDEN Engineering Team","url":"https://elexnova.com/about.html"},"publisher":{"@type":"Organization","name":"Guangzhou Miden Electronics Co., Ltd","url":"https://elexnova.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://elexnova.com/news/ev-charger-power-inductor-selection.html"},"isPartOf":{"@type":"Blog","@id":"https://elexnova.com/news.html#blog","name":"MiDEN Technical Insights","url":"https://elexnova.com/news.html"}},{"@type":"BreadcrumbList","@id":"https://elexnova.com/news/ev-charger-power-inductor-selection.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://elexnova.com/index.html"},{"@type":"ListItem","position":2,"name":"Technical Insights","item":"https://elexnova.com/news.html"},{"@type":"ListItem","position":3,"name":"EV Charger Power Inductor Selection Guide","item":"https://elexnova.com/news/ev-charger-power-inductor-selection.html"}]}]}</script>
+<!-- technical-insights:head:start -->
+<meta name="keywords" content="ev charger power inductor, power inductor selection for ev chargers, pfc boost inductor thermal design, ev charger dc dc inductor, high current inductor saturation margin, inductor ripple current ratio">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MiDEN Electronics">
+<meta property="og:title" content="EV Charger Power Inductor Selection Guide | MiDEN Electronics">
+<meta property="og:description" content="EV charger power inductor selection is a per-stage decision: set the ripple ratio, saturation definition and thermal margin, then quote the RFQ checklist.">
+<meta property="og:url" content="https://elexnova.com/news/ev-charger-power-inductor-selection.html">
+<meta property="og:locale" content="en_US">
+<meta property="article:section" content="Applications">
+<meta property="article:published_time" content="2026-10-04">
+<meta property="article:modified_time" content="2026-10-04">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="EV Charger Power Inductor Selection Guide | MiDEN Electronics">
+<meta name="twitter:description" content="EV charger power inductor selection is a per-stage decision: set the ripple ratio, saturation definition and thermal margin, then quote the RFQ checklist.">
+<link rel="alternate" type="application/rss+xml" title="MiDEN Technical Insights RSS" href="feed.xml">
+<link rel="stylesheet" href="../assets/css/technical-insights.css">
+<!-- technical-insights:head:end -->
+</head><body><!-- NAVIGATION INCLUDE -->
+<div id="site-navbar"></div>
+<script>
+(() => {
+  if (window.__midenNavigationLoaded) return;
+  window.__midenNavigationLoaded = true;
+  const navbar = document.getElementById('site-navbar');
+  if (!navbar || navbar.dataset.loaded === 'true') return;
+  const nested = /\/(products|news|industries|clusters|landing)\//.test(window.location.pathname.replace(/\\/g, '/'));
+  const navigationUrl = `${nested ? '../' : ''}assets/components/navigation.html`;
+  fetch(navigationUrl).then((res) => res.text()).then((html) => { if (navbar.dataset.loaded === 'true') return; navbar.innerHTML = html; navbar.dataset.loaded = 'true'; });
+})();
+</script><main><article class="article-page"><nav class="breadcrumbs"><a href="../index.html">Home</a><a href="../news.html">Technical Insights</a><span>EV Charger Power Inductor Selection Guide</span></nav>
+<!-- technical-insights:meta:start -->
+<div class="ti-article-meta">
+<a class="ti-badge" data-category="applications" href="../news.html#applications">Applications</a>
+<time datetime="2026-10-04">Published October 4, 2026</time>
+<span>7 min read</span>
+</div>
+<!-- technical-insights:meta:end -->
+
+<!-- technical-insights:takeaways:start -->
+<section class="ti-takeaways" aria-label="Key takeaways">
+<p class="eyebrow">Key Takeaways</p>
+<h2>What this article covers</h2>
+<ul>
+<li>Size each magnetic position separately: the PFC choke is set by ripple ratio at peak line, the DC-DC inductor by ripple at rated load, and the auxiliary rail by load-step response.</li>
+<li>Define saturation as an inductance drop at a stated DC bias, then keep roughly 20 to 30 percent headroom above the worst-case peak current.</li>
+<li>Quote the thermal condition with the enquiry, because the same part can be comfortable at 25 C ambient and marginal at 55 C inside a sealed charger.</li>
+</ul>
+</section>
+<!-- technical-insights:takeaways:end -->
+
+<!-- technical-insights:toc:start -->
+<nav class="ti-toc" aria-label="On this page">
+<p class="eyebrow">On This Page</p>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#technical-analysis">Technical Analysis: The Position Sets the Ripple Target</a></li>
+<li><a href="#design-challenges">Design Challenges in a Sealed Charger</a></li>
+<li><a href="#application-scenarios">Application Scenarios: 7 kW to 350 kW</a></li>
+<li><a href="#product-connection">Product Connection: Matching a Family to the Position</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
+</ol>
+</nav>
+<!-- technical-insights:toc:end -->
+
+
+<p class="eyebrow">MiDEN Technical Insights</p><h1>EV Charger Power Inductor Selection Guide</h1><h2 id="introduction">Introduction</h2>
+<p>EV charger power inductor selection is a per-position decision, not one part number. A 22 kW on-board charger contains at least three magnetic positions with different jobs: the boost choke that shapes the input current, the inductor in the isolated DC-DC output stage, and the small rails that supply the control and gate drive circuits. Each position has its own ripple target, its own saturation definition and its own thermal condition, and a part chosen for one is usually the wrong part for the next. This guide works through the positions in the order a charger designer meets them, and ends with the parameters worth putting into an RFQ.</p>
+<h2 id="technical-analysis">Technical Analysis: The Position Sets the Ripple Target</h2>
+<p>Every inductor in a charger is sized by a volt-second balance, but the term that decides the result changes with the position. In the PFC stage the constraint is the ripple ratio at the peak of the line cycle. In the DC-DC output stage it is the ripple at rated load. On an auxiliary rail it is usually the load-step response, because the load moves faster than the control loop can react.</p>
+<p>Start with ripple. For a continuous conduction mode boost choke the inductance follows from the input voltage, the duty cycle, the switching frequency and the ripple current you are willing to accept:</p>
+<p><strong>L = (Vin &times; D) / (dIL &times; fsw)</strong>, where dIL is the peak-to-peak ripple and D the duty cycle at that operating point.</p>
+<p>The ripple ratio, dIL divided by the instantaneous inductor current, is the number worth arguing about, because it trades core size against peak flux. A low ratio means a large core with low core loss and more copper. A high ratio means a small core, a higher peak flux, and a converter that slides toward discontinuous conduction at light load. Most 22 kW designs settle between 30% and 40% at the peak of the line cycle.</p>
+<p>DC bias changes the answer. Powder cores lose inductance gradually as the DC current rises, so the ripple at rated load is larger than a small-signal calculation predicts. That is why <a href="../news/understanding-saturation-current-power-inductors.html">how saturation current is defined</a> belongs inside the same calculation rather than in a separate check, and why the <a href="../news/how-to-select-power-inductor.html">inductor selection method for DC-DC stages</a> is worth reading before fixing a value.</p>
+<table><thead><tr><th>Position</th><th>What sets the value</th><th>Ripple target</th><th>Dominant loss</th></tr></thead><tbody><tr><td>PFC boost choke</td><td>Ripple ratio at peak line</td><td>30-40% of instantaneous current</td><td>Core loss and copper</td></tr><tr><td>DC-DC output inductor</td><td>Ripple at rated load</td><td>20-30% of rated current</td><td>Copper at high current</td></tr><tr><td>Auxiliary rail</td><td>Load-step response</td><td>Set by the control loop</td><td>Copper in a small core</td></tr></tbody></table>
+<h2 id="design-challenges">Design Challenges in a Sealed Charger</h2>
+<p>Four constraints decide whether the part survives production rather than whether it works on the bench.</p>
+<ul>
+<li><strong>Saturation margin under fault current.</strong> The steady-state calculation is not the worst case. A short overload or an inrush event pushes the instantaneous current well above the nominal peak, and the inductance has to stay usable there. State the saturation definition explicitly, for example a 20% drop in inductance at a stated DC bias.</li>
+<li><strong>Thermal condition.</strong> Core loss and copper loss both depend on temperature, and the losses raise the temperature in turn. Fix the ambient and the permitted rise, for example 55 &deg;C ambient with a 40 K rise inside a sealed enclosure, and check the design at that point instead of at 25 &deg;C.</li>
+<li><strong>Insulation and creepage.</strong> The PFC choke sits across the rectified line and the DC-DC inductor sits across the isolation barrier, so the insulation system and the creepage distance are safety parameters. They belong in the RFQ, not in a follow-up email.</li>
+<li><strong>Vibration and audible noise.</strong> A charger mounted on a vehicle sees continuous vibration, and a large ripple at line frequency makes the winding move. Impregnation and the way the core is clamped decide whether the part stays quiet over the life of the unit.</li>
+</ul>
+<p>An 800 V bus sharpens the first two constraints. The same power is delivered at half the current, which helps copper loss, but the voltage across the winding rises and the switching edges get faster, so the insulation system and the inter-winding capacitance matter more than they did on a 400 V design.</p>
+<h2 id="application-scenarios">Application Scenarios: 7 kW to 350 kW</h2>
+<p>The same method produces different answers across the charging range, and the differences are large enough to change the component family rather than only the value.</p>
+<ul>
+<li><strong>7 kW single-phase on-board charger.</strong> The PFC stage runs in continuous conduction with moderate ripple, and a standard power inductor body usually covers the position. Thermal margin is comfortable because the enclosure is smaller and the losses are lower.</li>
+<li><strong>22 kW three-phase on-board charger.</strong> Current per phase falls, but the DC-DC output stage still carries the full pack current in a tight enclosure. Copper loss dominates, so flat wire construction becomes worth discussing and the thermal condition has to be quoted with the enquiry.</li>
+<li><strong>50 kW to 350 kW DC fast charging cabinet.</strong> The AC-DC front end is paralleled, so current sharing between modules matters as much as the inductance itself, and the output filter sees a wide bus range. Toroidal and custom wound parts are common where the mechanical envelope is not a standard body.</li>
+</ul>
+<p>Charger designers and their <a href="../industries/ev-charger.html">EV charger magnetic components</a> supplier usually settle the position first and the value second. The reverse order is what produces a part that fits the schematic and not the enclosure.</p>
+<h2 id="product-connection">Product Connection: Matching a Family to the Position</h2>
+<p>The <a href="../products/power-inductor.html">power inductor series</a> covers most continuous conduction mode positions once the inductance, the rated current and the thermal condition are known. Where the current is high enough that copper loss dominates, flat wire construction lowers the DC resistance for the same footprint, and that construction is available as a custom variant rather than as a separate catalogue family.</p>
+<p>Toroidal construction is the usual answer for the higher-current PFC and output filter positions in a fast charging cabinet, because the closed magnetic path contains the field and the winding can be sized for the current without an oversized bobbin. Custom magnetic components are the right answer when the mechanical envelope, the insulation system or the creepage requirement cannot be met by a standard body: send the drawing, the target inductance and the fault current the part must ride through, and the design is reviewed against those numbers rather than against a catalogue table.</p>
+<p>Across the three positions the same four parameters drive the review: the current waveform including its worst case, the saturation definition with the bias and the temperature stated, the thermal condition with ambient and permitted rise, and the insulation requirement. A fifth parameter, the mechanical envelope, decides whether a standard body is a candidate at all. If the charger shares a platform with other products, the wider set of <a href="../applications.html">magnetic component applications</a> is the place to check what else the same magnetics have to survive.</p>
+<h2 id="faq">Frequently Asked Questions</h2>
+<h3 id="faq-1">What ripple current ratio should I specify for a PFC boost inductor?</h3>
+<p>For a continuous conduction mode PFC stage, 30% to 40% ripple at the peak of the line cycle is a practical starting point. Below that the core grows faster than the loss falls; above it the peak flux and the risk of discontinuous conduction at light load rise quickly.</p>
+<h3 id="faq-2">How should saturation current be defined for an EV charger inductor?</h3>
+<p>Define it as an inductance drop at a stated DC bias, not as a single current number. A 20% drop at the peak current is a common definition, and the catalogue value is only meaningful when the bias condition and the temperature are stated alongside it.</p>
+<h3 id="faq-3">Does an 800 V charger need a different inductor from a 400 V design?</h3>
+<p>The value usually changes less than the insulation requirement does. Doubling the bus halves the current for the same power, but the voltage across the winding and the speed of the switching edges both rise, so the insulation system, the creepage distance and the winding capacitance become the parameters that decide the part.</p>
+<!-- technical-insights:tail:start -->
+<section class="ti-related">
+<p class="eyebrow">Related Technical Insights</p>
+<h2>Continue reading</h2>
+<div class="ti-related-grid">
+<a href="understanding-saturation-current-power-inductors.html">
+<strong>Understanding Saturation Current in Power Inductor Series</strong>
+<span class="ti-card-summary">What saturation current, rated current and temperature rise really mean on a datasheet, and how much inductance roll-off a high current converter can tolerate before performance drops.</span>
+<span class="ti-badge" data-category="technical-articles">Technical Articles</span>
+</a>
+<a href="how-to-select-power-inductor.html">
+<strong>How to Select a Power Inductor for DC-DC Converters</strong>
+<span class="ti-card-summary">A step-by-step selection method for DC-DC power inductors: inductance from ripple current, saturation and thermal margin, DCR loss, shielding and the data a supplier needs for a fast quotation.</span>
+<span class="ti-badge" data-category="technical-articles">Technical Articles</span>
+</a>
+<a href="magnetic-components-ev-charging-systems.html">
+<strong>Magnetic Components for EV Charging Systems</strong>
+<span class="ti-card-summary">AC and DC EV charger designs depend on PFC inductors, resonant transformers, common mode chokes and output filter magnetics. Review the selection priorities for each position.</span>
+<span class="ti-badge" data-category="applications">Applications</span>
+</a>
+</div>
+</section>
+<section class="ti-links">
+<p class="eyebrow">Related MiDEN Resources</p>
+<h2>Products and pages related to this article</h2>
+<div class="ti-product-links">
+<a href="../products/power-inductor.html">Power Inductor Series</a>
+<a href="../products/toroidal-inductors.html">Toroidal Inductor Series</a>
+<a href="../products/custom-magnetic-components.html">Custom Magnetic Components</a>
+<a href="../industries/ev-charger.html">EV Charger Magnetic Components</a>
+<a href="../contact.html">Contact Us</a>
+<a href="../applications.html">Applications</a>
+</div>
+<div class="case-keywords ti-keywords">
+<span>ev charger power inductor</span><span>power inductor selection for ev chargers</span><span>pfc boost inductor thermal design</span><span>ev charger dc dc inductor</span><span>high current inductor saturation margin</span><span>inductor ripple current ratio</span>
+</div>
+</section>
+<section class="ti-cta">
+<p class="eyebrow">Request engineering support</p>
+<h2>Talk to a magnetic component engineer</h2>
+<p>Send your drawing, target inductance, current, frequency, size limit and application details. MiDEN reviews selection, samples and quotation for standard and custom magnetic components.</p>
+<div class="case-conversion-actions">
+<a class="btn" href="../contact.html">Contact Us</a>
+<a class="btn secondary" href="../contact.html#inquiry-form">Request Quote</a>
+<a class="btn secondary" href="https://wa.me/8619808253978" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</section>
+<!-- technical-insights:tail:end --></article></main><footer class="site-footer"><div class="footer-grid"><div><h2 id="miden">MiDEN</h2><p>Manufacturer of inductors, coils and high frequency transformers.</p></div><div><h3>Technical Insights</h3><a href="./">All Articles</a><a href="feed.xml">RSS Feed</a><a href="../products.html">Products</a><a href="../applications.html">Applications</a></div><div><h3>Contact</h3><p>Ruby Liu</p><p>Email: <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=selinaliu3978%40gmail.com&amp;su=RFQ%20from%20Website&amp;body=Hi%2C%20I%20am%20interested%20in%20your%20magnetic%20components." target="_blank" rel="noopener" title="Send Email">selinaliu3978@gmail.com</a></p></div></div><div class="footer-contact-actions"><a href="../contact.html">Request RFQ / Get Quote</a><a href="https://wa.me/8619808253978" target="_blank" rel="noopener">WhatsApp</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=selinaliu3978%40gmail.com&amp;su=RFQ%20from%20Website&amp;body=Hi%2C%20I%20am%20interested%20in%20your%20magnetic%20components." target="_blank" rel="noopener" title="Send Email">Email</a></div></footer><div class="floating-contact"><a href="https://wa.me/8619808253978" target="_blank" rel="noopener">WhatsApp</a></div><script src="../assets/js/miden-interaction-engine.js"></script><script src="../assets/js/miden-ai-quotation.js"></script><script src="../assets/js/miden-ai-engine.js"></script><script src="../assets/js/main.js"></script><script src="/assets/js/rfq-engine.js"></script></body></html>

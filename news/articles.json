@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-30",
+  "generated": "2026-10-04",
   "hub": {
     "url": "https://elexnova.com/news.html",
     "mirror": "https://elexnova.com/news/",
@@ -17,7 +17,7 @@
       "name": "Applications",
       "slug": "applications",
       "description": "How magnetic components behave in solar, EV charging, industrial automation, telecom and power supply designs.",
-      "count": 6
+      "count": 7
     },
     {
       "name": "Industry Trends",
@@ -32,8 +32,27 @@
       "count": 1
     }
   ],
-  "count": 27,
+  "count": 28,
   "articles": [
+    {
+      "slug": "ev-charger-power-inductor-selection",
+      "url": "https://elexnova.com/news/ev-charger-power-inductor-selection.html",
+      "title": "EV Charger Power Inductor Selection Guide",
+      "summary": "A position-by-position method for EV charger power inductor selection: the PFC boost choke, the isolated DC/DC output inductor and the auxiliary rails, each with the ripple target, saturation definition and thermal condition a buyer should quote.",
+      "date": "2026-10-04",
+      "updated": "2026-10-04",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "ev charger power inductor",
+        "power inductor selection for ev chargers",
+        "pfc boost inductor thermal design",
+        "ev charger dc dc inductor",
+        "high current inductor saturation margin",
+        "inductor ripple current ratio"
+      ],
+      "readingMinutes": 7
+    },
     {
       "slug": "miden-factory-capability-update",
       "url": "https://elexnova.com/news/miden-factory-capability-update.html",

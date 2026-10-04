@@ -6,7 +6,15 @@
     <atom:link href="https://elexnova.com/news/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Elexnova Technical Insights publishes engineering articles on inductor selection, high frequency transformer design, EMI filtering, power supply design and magnetic component applications.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 28 Sep 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Sun, 04 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>EV Charger Power Inductor Selection Guide</title>
+      <link>https://elexnova.com/news/ev-charger-power-inductor-selection.html</link>
+      <guid isPermaLink="true">https://elexnova.com/news/ev-charger-power-inductor-selection.html</guid>
+      <category>Applications</category>
+      <pubDate>Sun, 04 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A position-by-position method for EV charger power inductor selection: the PFC boost choke, the isolated DC/DC output inductor and the auxiliary rails, each with the ripple target, saturation definition and thermal condition a buyer should quote.</description>
+    </item>
     <item>
       <title>Factory Capability and Quality Update for Custom Magnetic Components</title>
       <link>https://elexnova.com/news/miden-factory-capability-update.html</link>
