@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-04",
+  "generated": "2026-10-05",
   "hub": {
     "url": "https://elexnova.com/news.html",
     "mirror": "https://elexnova.com/news/",
@@ -17,7 +17,7 @@
       "name": "Applications",
       "slug": "applications",
       "description": "How magnetic components behave in solar, EV charging, industrial automation, telecom and power supply designs.",
-      "count": 7
+      "count": 8
     },
     {
       "name": "Industry Trends",
@@ -32,8 +32,26 @@
       "count": 1
     }
   ],
-  "count": 28,
+  "count": 29,
   "articles": [
+    {
+      "slug": "high-frequency-transformer-ai-server-psu",
+      "url": "https://elexnova.com/news/high-frequency-transformer-ai-server-psu.html",
+      "title": "High Frequency Transformer for AI Server PSU",
+      "summary": "A selection method for the high frequency transformer in an AI server power supply: frequency and flux swing, planar versus wound construction, leakage inductance, isolation coordination and the thermal data a supplier needs to quote.",
+      "date": "2026-10-05",
+      "updated": "2026-10-05",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "high frequency transformer for ai server psu",
+        "server power supply transformer selection",
+        "planar transformer for data center power supply",
+        "transformer core loss at high switching frequency",
+        "transformer isolation and creepage for server psu"
+      ],
+      "readingMinutes": 6
+    },
     {
       "slug": "ev-charger-power-inductor-selection",
       "url": "https://elexnova.com/news/ev-charger-power-inductor-selection.html",

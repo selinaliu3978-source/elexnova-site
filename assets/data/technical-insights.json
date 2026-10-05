@@ -1090,6 +1090,45 @@
         "Define saturation as an inductance drop at a stated DC bias, then keep roughly 20 to 30 percent headroom above the worst-case peak current.",
         "Quote the thermal condition with the enquiry, because the same part can be comfortable at 25 C ambient and marginal at 55 C inside a sealed charger."
       ]
+    },
+    {
+      "slug": "high-frequency-transformer-ai-server-psu",
+      "title": "High Frequency Transformer for AI Server PSU",
+      "summary": "A selection method for the high frequency transformer in an AI server power supply: frequency and flux swing, planar versus wound construction, leakage inductance, isolation coordination and the thermal data a supplier needs to quote.",
+      "date": "2026-10-05",
+      "category": "Applications",
+      "keywords": [
+        "high frequency transformer for ai server psu",
+        "server power supply transformer selection",
+        "planar transformer for data center power supply",
+        "transformer core loss at high switching frequency",
+        "transformer isolation and creepage for server psu"
+      ],
+      "products": [
+        [
+          "Transformer Series",
+          "../products/transformers.html"
+        ],
+        [
+          "Planar Transformer Series",
+          "../products/planar-transformer.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "high-frequency-transformer-design-guide",
+        "industrial-applications-high-frequency-transformers",
+        "custom-transformer-manufacturing-process"
+      ],
+      "takeaways": [
+        "Choose the switching frequency first: 150 kHz to 400 kHz is the practical window for a 1U AI server supply, and it decides both the core size and the winding construction.",
+        "At fixed flux swing, core loss per unit volume rises faster than frequency falls, so the material curve at the working temperature matters more than the curve at 25 C.",
+        "Above a few amps the winding is the loss problem, not the core: foil, Litz or planar construction keeps current spread across the copper instead of pushed to its edges.",
+        "State the isolation requirement as a working voltage with creepage, clearance and insulation class, because the barrier is a safety parameter rather than a mechanical detail."
+      ]
     }
   ]
 }
