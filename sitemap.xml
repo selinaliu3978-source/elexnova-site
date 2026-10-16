@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://elexnova.com/news.html</loc>
-    <lastmod>2026-10-05</lastmod>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -123,6 +123,12 @@
   <url>
     <loc>https://elexnova.com/news/common-causes-transformer-failure.html</loc>
     <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://elexnova.com/news/common-mode-choke-server-power-supply.html</loc>
+    <lastmod>2026-10-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>

@@ -6,7 +6,15 @@
     <atom:link href="https://elexnova.com/news/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Elexnova Technical Insights publishes engineering articles on inductor selection, high frequency transformer design, EMI filtering, power supply design and magnetic component applications.</description>
     <language>en</language>
-    <lastBuildDate>Mon, 05 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Common Mode Choke for Server Power Supply</title>
+      <link>https://elexnova.com/news/common-mode-choke-server-power-supply.html</link>
+      <guid isPermaLink="true">https://elexnova.com/news/common-mode-choke-server-power-supply.html</guid>
+      <category>Applications</category>
+      <pubDate>Fri, 16 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A selection method for the common mode choke in a data centre server supply: where the Class B conducted limit actually bites, how Y-capacitor value trades against leakage current across paralleled units, and the impedance and thermal data a supplier needs to quote.</description>
+    </item>
     <item>
       <title>High Frequency Transformer for AI Server PSU</title>
       <link>https://elexnova.com/news/high-frequency-transformer-ai-server-psu.html</link>

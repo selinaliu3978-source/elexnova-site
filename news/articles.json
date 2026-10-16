@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-05",
+  "generated": "2026-10-16",
   "hub": {
     "url": "https://elexnova.com/news.html",
     "mirror": "https://elexnova.com/news/",
@@ -17,7 +17,7 @@
       "name": "Applications",
       "slug": "applications",
       "description": "How magnetic components behave in solar, EV charging, industrial automation, telecom and power supply designs.",
-      "count": 8
+      "count": 9
     },
     {
       "name": "Industry Trends",
@@ -32,8 +32,27 @@
       "count": 1
     }
   ],
-  "count": 29,
+  "count": 30,
   "articles": [
+    {
+      "slug": "common-mode-choke-server-power-supply",
+      "url": "https://elexnova.com/news/common-mode-choke-server-power-supply.html",
+      "title": "Common Mode Choke for Server Power Supply",
+      "summary": "A selection method for the common mode choke in a data centre server supply: where the Class B conducted limit actually bites, how Y-capacitor value trades against leakage current across paralleled units, and the impedance and thermal data a supplier needs to quote.",
+      "date": "2026-10-16",
+      "updated": "2026-10-16",
+      "category": "Applications",
+      "categorySlug": "applications",
+      "keywords": [
+        "common mode choke for server power supply",
+        "cispr 32 class b conducted emissions",
+        "y capacitor and leakage current trade off",
+        "emi filter for data center power supply",
+        "common mode choke insertion loss",
+        "leakage current of paralleled server psus"
+      ],
+      "readingMinutes": 6
+    },
     {
       "slug": "high-frequency-transformer-ai-server-psu",
       "url": "https://elexnova.com/news/high-frequency-transformer-ai-server-psu.html",

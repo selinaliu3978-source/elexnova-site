@@ -1129,6 +1129,46 @@
         "Above a few amps the winding is the loss problem, not the core: foil, Litz or planar construction keeps current spread across the copper instead of pushed to its edges.",
         "State the isolation requirement as a working voltage with creepage, clearance and insulation class, because the barrier is a safety parameter rather than a mechanical detail."
       ]
+    },
+    {
+      "slug": "common-mode-choke-server-power-supply",
+      "title": "Common Mode Choke for Server Power Supply",
+      "summary": "A selection method for the common mode choke in a data centre server supply: where the Class B conducted limit actually bites, how Y-capacitor value trades against leakage current across paralleled units, and the impedance and thermal data a supplier needs to quote.",
+      "date": "2026-10-16",
+      "category": "Applications",
+      "keywords": [
+        "common mode choke for server power supply",
+        "cispr 32 class b conducted emissions",
+        "y capacitor and leakage current trade off",
+        "emi filter for data center power supply",
+        "common mode choke insertion loss",
+        "leakage current of paralleled server psus"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "common-mode-choke-working-principle",
+        "common-mode-choke-vs-differential-mode-choke",
+        "emi-filter-design-basics"
+      ],
+      "takeaways": [
+        "CISPR 32 Class B conducted emissions are tightest between 500 kHz and 5 MHz, which is also where a common mode choke stops behaving like a pure inductor.",
+        "Specify insertion loss across the band at the working current and temperature, not a single inductance value measured at small signal.",
+        "Y-capacitor value is a compliance decision and a leakage decision at the same time: raising it buys attenuation at the low end and spends leakage current budget.",
+        "Leakage current adds across paralleled supplies, so the practical ceiling for a rack is set by the residual current device protecting the branch, not by the standard alone."
+      ]
     }
   ]
 }
