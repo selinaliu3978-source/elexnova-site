@@ -6,7 +6,15 @@
     <atom:link href="https://elexnova.com/news/feed.xml" rel="self" type="application/rss+xml"/>
     <description>Elexnova Technical Insights publishes engineering articles on inductor selection, high frequency transformer design, EMI filtering, power supply design and magnetic component applications.</description>
     <language>en</language>
-    <lastBuildDate>Fri, 16 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <lastBuildDate>Mon, 26 Oct 2026 00:00:00 GMT</lastBuildDate>
+    <item>
+      <title>Near-Field Probe EMI Measurement Guide</title>
+      <link>https://elexnova.com/news/near-field-probe-emi-measurement.html</link>
+      <guid isPermaLink="true">https://elexnova.com/news/near-field-probe-emi-measurement.html</guid>
+      <category>Technical Articles</category>
+      <pubDate>Mon, 26 Oct 2026 00:00:00 GMT</pubDate>
+      <description>A practical guide to repeatable near-field probe measurements in switching power supplies: what loop and E-field probes actually sense, how height, orientation and cable currents distort readings, and how to localize noise sources and compare filter changes with confidence.</description>
+    </item>
     <item>
       <title>Common Mode Choke for Server Power Supply</title>
       <link>https://elexnova.com/news/common-mode-choke-server-power-supply.html</link>

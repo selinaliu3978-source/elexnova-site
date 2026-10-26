@@ -1,0 +1,152 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Near-Field Probe EMI Measurement Guide | MiDEN Electronics</title><meta name="description" content="Near-field probe EMI measurement: how height, orientation, field type and cable current change the reading, and how to make debug measurements repeatable.">
+<link rel="canonical" href="https://elexnova.com/news/near-field-probe-emi-measurement.html"><link rel="stylesheet" href="../assets/css/styles.css"><script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"TechArticle","@id":"https://elexnova.com/news/near-field-probe-emi-measurement.html#article","headline":"Near-Field Probe EMI Measurement Guide","description":"Near-field probe EMI measurement: how height, orientation, field type and cable current change the reading, and how to make debug measurements repeatable.","keywords":"near-field probe emi measurement, near field probe height and orientation, emi probe repeatability, e-field vs h-field probe, near-field probe cable common mode current, emi debugging switching node","articleSection":"Technical Articles","inLanguage":"en","datePublished":"2026-10-26","dateModified":"2026-10-26","url":"https://elexnova.com/news/near-field-probe-emi-measurement.html","author":{"@type":"Organization","name":"MiDEN Engineering Team","url":"https://elexnova.com/about.html"},"publisher":{"@type":"Organization","name":"Guangzhou Miden Electronics Co., Ltd","url":"https://elexnova.com/"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://elexnova.com/news/near-field-probe-emi-measurement.html"},"isPartOf":{"@type":"Blog","@id":"https://elexnova.com/news.html#blog","name":"MiDEN Technical Insights","url":"https://elexnova.com/news.html"}},{"@type":"BreadcrumbList","@id":"https://elexnova.com/news/near-field-probe-emi-measurement.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://elexnova.com/index.html"},{"@type":"ListItem","position":2,"name":"Technical Insights","item":"https://elexnova.com/news.html"},{"@type":"ListItem","position":3,"name":"Near-Field Probe EMI Measurement Guide","item":"https://elexnova.com/news/near-field-probe-emi-measurement.html"}]}]}</script>
+<!-- technical-insights:head:start -->
+<meta name="keywords" content="near-field probe emi measurement, near field probe height and orientation, emi probe repeatability, e-field vs h-field probe, near-field probe cable common mode current, emi debugging switching node">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="MiDEN Electronics">
+<meta property="og:title" content="Near-Field Probe EMI Measurement Guide | MiDEN Electronics">
+<meta property="og:description" content="Near-field probe EMI measurement: how height, orientation, field type and cable current change the reading, and how to make debug measurements repeatable.">
+<meta property="og:url" content="https://elexnova.com/news/near-field-probe-emi-measurement.html">
+<meta property="og:locale" content="en_US">
+<meta property="article:section" content="Technical Articles">
+<meta property="article:published_time" content="2026-10-26">
+<meta property="article:modified_time" content="2026-10-26">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Near-Field Probe EMI Measurement Guide | MiDEN Electronics">
+<meta name="twitter:description" content="Near-field probe EMI measurement: how height, orientation, field type and cable current change the reading, and how to make debug measurements repeatable.">
+<link rel="alternate" type="application/rss+xml" title="MiDEN Technical Insights RSS" href="feed.xml">
+<link rel="stylesheet" href="../assets/css/technical-insights.css">
+<!-- technical-insights:head:end -->
+</head><body><!-- NAVIGATION INCLUDE -->
+<div id="site-navbar"></div>
+<script>
+(() => {
+  if (window.__midenNavigationLoaded) return;
+  window.__midenNavigationLoaded = true;
+  const navbar = document.getElementById('site-navbar');
+  if (!navbar || navbar.dataset.loaded === 'true') return;
+  const nested = /\/(products|news|industries|clusters|landing)\//.test(window.location.pathname.replace(/\\/g, '/'));
+  const navigationUrl = `${nested ? '../' : ''}assets/components/navigation.html`;
+  fetch(navigationUrl).then((res) => res.text()).then((html) => { if (navbar.dataset.loaded === 'true') return; navbar.innerHTML = html; navbar.dataset.loaded = 'true'; });
+})();
+</script><main><article class="article-page"><nav class="breadcrumbs"><a href="../index.html">Home</a><a href="../news.html">Technical Insights</a><span>Near-Field Probe EMI Measurement Guide</span></nav>
+<!-- technical-insights:meta:start -->
+<div class="ti-article-meta">
+<a class="ti-badge" data-category="technical-articles" href="../news.html#technical-articles">Technical Articles</a>
+<time datetime="2026-10-26">Published October 26, 2026</time>
+<span>7 min read</span>
+</div>
+<!-- technical-insights:meta:end -->
+
+<!-- technical-insights:takeaways:start -->
+<section class="ti-takeaways" aria-label="Key takeaways">
+<p class="eyebrow">Key Takeaways</p>
+<h2>What this article covers</h2>
+<ul>
+<li>A near-field probe is a relative instrument: fix the gap, angle, cable route and receiver settings before comparing any two measurements.</li>
+<li>A magnetic loop probe responds to dB/dt and an E-field probe to the electric field around a conductor; the coupling type decides which probe and which fix make sense.</li>
+<li>Cable common-mode current and hand proximity can distort the reading. Keep the cable route fixed, use a repeatable probe holder, and test a ferrite sleeve only when needed.</li>
+<li>Near-field probing localizes noise sources and validates filter changes, but it does not replace conducted or radiated compliance testing.</li>
+</ul>
+</section>
+<!-- technical-insights:takeaways:end -->
+
+<!-- technical-insights:toc:start -->
+<nav class="ti-toc" aria-label="On this page">
+<p class="eyebrow">On This Page</p>
+<ol>
+<li><a href="#introduction">Introduction</a></li>
+<li><a href="#technical-analysis">Technical Analysis: What the Probe Actually Senses</a></li>
+<li><a href="#design-challenges">Design Challenges: Height, Orientation and Cable Current</a></li>
+<li><a href="#application-scenarios">Application Scenarios: Localizing a Source and Comparing a Filter</a></li>
+<li><a href="#product-connection">Product Connection: Where MiDEN Magnetics Fit</a></li>
+<li><a href="#faq">Frequently Asked Questions</a></li>
+</ol>
+</nav>
+<!-- technical-insights:toc:end -->
+
+
+<p class="eyebrow">MiDEN Technical Insights</p><h1>Near-Field Probe EMI Measurement Guide</h1><h2 id="introduction">Introduction</h2>
+<p>Near-field probe EMI measurement is a fast way to find which part of a switching converter radiates, and an easy way to fool yourself. Move the probe a few millimetres, rotate it, or let its cable brush the bench, and the spectrum can change by more than it does when you alter the circuit. The probe is not, by itself, a calibrated field meter; it is a small antenna whose output depends on distance, orientation, the field it couples to, and the current on its own shield. This guide explains what the probe actually senses, how those variables distort a reading, and how to set up a measurement you can trust when comparing a layout change or a filter modification.</p>
+<h2 id="technical-analysis">Technical Analysis: What the Probe Actually Senses</h2>
+<p>Most near-field probes fall into two families. A magnetic loop probe responds to the rate of change of magnetic flux through its loop, so its output rises with frequency and with the area of the current loop it is looking at. An electric-field probe responds capacitively to the voltage on a nearby conductor; it is most useful on high dv/dt nodes, where the displacement current through the probe is largest. Both are directional: a loop reads maximum when its axis is aligned with the field, and an E-field probe reads maximum when its tip points at the source.</p>
+<p>The near field is not the far field. Close to the board, the electric and magnetic components are not in a fixed ratio, and the probe reads whichever component it couples to most strongly. That is useful for localization and misleading for prediction: a strong near-field reading at 80 MHz does not prove the conducted emission at the mains terminal will fail, and a quiet reading does not prove the board is clean.</p>
+<table><thead><tr><th>Probe type</th><th>Dominant coupling</th><th>Best for</th><th>Main pitfall</th></tr></thead><tbody><tr><td>Magnetic loop</td><td>dB/dt (H-field)</td><td>Current loops, cables, inductor bodies</td><td>Reads maximum only when aligned; cable current adds to the reading</td></tr><tr><td>Electric field</td><td>E-field (voltage)</td><td>Switching nodes, heatsinks, isolated metal</td><td>Capacitive loading; hand and body proximity</td></tr><tr><td>Shielded loop</td><td>H-field with reduced E pickup</td><td>Dense boards with both fields</td><td>Shield does not remove cable common-mode current</td></tr></tbody></table>
+<p>Treat the probe as a relative instrument. Unless it has a calibrated transfer factor and the geometry is controlled, the reading is a comparative number, not a field strength in V/m or A/m. That is enough to answer "which area is noisy" and "did the change help", provided the geometry is fixed. The general diagnostic sequence follows the Rohde &amp; Schwarz discussion published by Power Electronics News in October 2026: correlate the spectrum with the switching event, then trace the path. The probe behaviour described below is standard near-field measurement practice, and the exact response depends on the probe and fixture.</p>
+<h2 id="design-challenges">Design Challenges: Height, Orientation and Cable Current</h2>
+<p>Four variables usually dominate the reading before the circuit does.</p>
+<ul>
+<li><strong>Height.</strong> The near field falls quickly with distance. A probe held by hand at an unknown gap is not a repeatable instrument. Fix the gap with a spacer or a simple stand, record it, and use the same gap for every comparison.</li>
+<li><strong>Orientation.</strong> A loop probe is directional. Rotate it to the maximum for a source, then record the angle and keep it. Comparing a vertical reading with a horizontal one is comparing two different measurements.</li>
+<li><strong>Cable common-mode current.</strong> The probe cable shield can carry current and act as part of the antenna. Keep the cable route fixed and do not touch the cable during a sweep. A ferrite sleeve on the probe cable is a candidate control measure, not a universal requirement: compare a sweep with and without it and keep the configuration that gives a repeatable result.</li>
+<li><strong>Receiver settings.</strong> Resolution bandwidth, span, reference level and preamp gain all change the displayed amplitude. Save the setup and recall it for every A/B comparison.</li>
+</ul>
+<p>Two further effects are easy to miss. A probe close to a high-impedance node can load it capacitively and shift the frequency of the very ringing you are measuring. And an unshielded probe can respond to the electric field even when you are trying to measure a current loop. A useful control check is to move your hand toward the probe; if the reading changes, the setup is coupling to your body and the measurement is not yet under control.</p>
+<table><thead><tr><th>Factor</th><th>Effect on the reading</th><th>Control</th></tr></thead><tbody><tr><td>Distance</td><td>Large amplitude change</td><td>Fixed spacer or stand; same gap every run</td></tr><tr><td>Angle</td><td>Loop nulls and maxima</td><td>Rotate to maximum; record the angle</td></tr><tr><td>Cable route</td><td>Common-mode current adds to the signal</td><td>Fixed cable route; test a ferrite sleeve if needed</td></tr><tr><td>Receiver settings</td><td>Amplitude and peak width change</td><td>Save and recall the setup</td></tr><tr><td>Hand and body</td><td>Capacitive coupling changes the reading</td><td>Remote or fixed probe holder</td></tr></tbody></table>
+<h2 id="application-scenarios">Application Scenarios: Localizing a Source and Comparing a Filter</h2>
+<p>Two workflows justify the effort.</p>
+<ul>
+<li><strong>Source localization on a SiC or GaN board.</strong> Scan at a fixed height over the switching loop, the heatsink, the transformer and the input cable. Note the frequencies where the probe peaks, rotate for maximum at each peak, and compare the peak frequency with the switching edge and ringing seen on the oscilloscope. The goal is a short list of physical areas, not a compliance number.</li>
+<li><strong>A/B comparison of a filter change.</strong> Fix the probe relative to the same point, keep load, input voltage, cable length and receiver settings constant, and change one component at a time. A common-mode choke change, for example, should be judged at the input cable and the choke body with the probe in the same position before and after. If the probe moves between runs, the result cannot be attributed to the component.</li>
+</ul>
+<p>Use both probe types when the coupling mode is unclear. A strong E-field response at an isolated heatsink is a diagnostic clue for capacitive coupling from a switching node; a strong loop response around a cable or inductor is a clue for a current loop. Treat these as clues, not conclusions: confirm the path with a controlled change, such as moving the probe, adding a temporary shield or changing one component, before deciding whether a shield, layout change, common-mode choke or differential inductor is appropriate.</p>
+<h2 id="product-connection">Product Connection: Where MiDEN Magnetics Fit</h2>
+<p>Near-field probing does not replace the filter, but it tells you which filter position is worth changing.</p>
+<ul>
+<li>The <a href="../products/common-mode-choke.html">common mode choke series</a> addresses current that flows out and back through the cable and chassis. Probe the input cable and the choke body before and after a change to see whether the common-mode path moved.</li>
+<li>The <a href="../products/power-inductor.html">power inductor series</a> addresses the differential-mode path. Probe the switching loop and the inductor body when the differential component is the suspected path.</li>
+<li>Custom magnetic components are the route when the winding geometry, shielding or mounting has to change to move the field away from a sensitive area.</li>
+</ul>
+<p>The broader suppression workflow is covered in the article on <a href="../news/emi-suppression-in-power-supplies.html">EMI suppression techniques in power supplies</a>, and the server input-filter case in <a href="../news/common-mode-choke-server-power-supply.html">common mode choke for server power supply</a>. The wider component set is listed under <a href="../applications.html">magnetic component applications</a>.</p>
+<h2 id="faq">Frequently Asked Questions</h2>
+<p><strong>How high should a near-field probe be?</strong><br>There is no universal number. Closer gives more signal but more loading and less repeatability. Choose a gap that gives a clear peak, fix it with a spacer, and record it so every comparison uses the same geometry.</p>
+<p><strong>Can I compare near-field readings between different boards?</strong><br>Only if the probe, gap, angle, cable route and receiver settings are identical. Otherwise treat each reading as relative to its own setup, not as an absolute field measurement.</p>
+<p><strong>Why does the reading change when I touch the probe cable?</strong><br>The cable shield can carry common-mode current and become part of the antenna. Fix the cable route and keep hands away during the sweep. A ferrite sleeve is one control to test, but it is not required on every probe; verify whether it changes the reading on your setup.</p>
+<!-- technical-insights:tail:start -->
+<section class="ti-related">
+<p class="eyebrow">Related Technical Insights</p>
+<h2>Continue reading</h2>
+<div class="ti-related-grid">
+<a href="emi-suppression-in-power-supplies.html">
+<strong>EMI Suppression Techniques in Power Supplies</strong>
+<span class="ti-card-summary">Practical EMI suppression for power supplies using chokes, transformer construction, shielding, layout control and grounding, with the measurements engineers should request from a supplier.</span>
+<span class="ti-badge" data-category="technical-articles">Technical Articles</span>
+</a>
+<a href="emi-filter-design-basics.html">
+<strong>EMI Filter Design Basics for Industrial Electronics</strong>
+<span class="ti-card-summary">Build an EMI filter stage from the noise path outward: separating common mode and differential mode noise, placing chokes and capacitors, controlling grounding and preparing for compliance testing.</span>
+<span class="ti-badge" data-category="technical-articles">Technical Articles</span>
+</a>
+<a href="common-mode-choke-server-power-supply.html">
+<strong>Common Mode Choke for Server Power Supply</strong>
+<span class="ti-card-summary">A selection method for the common mode choke in a data centre server supply: where the Class B conducted limit actually bites, how Y-capacitor value trades against leakage current across paralleled units, and the impedance and thermal data a supplier needs to quote.</span>
+<span class="ti-badge" data-category="applications">Applications</span>
+</a>
+</div>
+</section>
+<section class="ti-links">
+<p class="eyebrow">Related MiDEN Resources</p>
+<h2>Products and pages related to this article</h2>
+<div class="ti-product-links">
+<a href="../products/common-mode-choke.html">Common Mode Choke Series</a>
+<a href="../products/power-inductor.html">Power Inductor Series</a>
+<a href="../products/custom-magnetic-components.html">Custom Magnetic Components</a>
+<a href="../contact.html">Contact Us</a>
+<a href="../applications.html">Applications</a>
+</div>
+<div class="case-keywords ti-keywords">
+<span>near-field probe emi measurement</span><span>near field probe height and orientation</span><span>emi probe repeatability</span><span>e-field vs h-field probe</span><span>near-field probe cable common mode current</span><span>emi debugging switching node</span>
+</div>
+</section>
+<section class="ti-cta">
+<p class="eyebrow">Request engineering support</p>
+<h2>Talk to a magnetic component engineer</h2>
+<p>Send your drawing, target inductance, current, frequency, size limit and application details. MiDEN reviews selection, samples and quotation for standard and custom magnetic components.</p>
+<div class="case-conversion-actions">
+<a class="btn" href="../contact.html">Contact Us</a>
+<a class="btn secondary" href="../contact.html#inquiry-form">Request Quote</a>
+<a class="btn secondary" href="https://wa.me/8619808253978" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+</section>
+<!-- technical-insights:tail:end --></article></main><footer class="site-footer"><div class="footer-grid"><div><h2 id="miden">MiDEN</h2><p>Manufacturer of inductors, coils and high frequency transformers.</p></div><div><h3>Technical Insights</h3><a href="./">All Articles</a><a href="feed.xml">RSS Feed</a><a href="../products.html">Products</a><a href="../applications.html">Applications</a></div><div><h3>Contact</h3><p>Ruby Liu</p><p>Email: <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=selinaliu3978%40gmail.com&amp;su=RFQ%20from%20Website&amp;body=Hi%2C%20I%20am%20interested%20in%20your%20magnetic%20components." target="_blank" rel="noopener" title="Send Email">selinaliu3978@gmail.com</a></p></div></div><div class="footer-contact-actions"><a href="../contact.html">Request RFQ / Get Quote</a><a href="https://wa.me/8619808253978" target="_blank" rel="noopener">WhatsApp</a><a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=selinaliu3978%40gmail.com&amp;su=RFQ%20from%20Website&amp;body=Hi%2C%20I%20am%20interested%20in%20your%20magnetic%20components." target="_blank" rel="noopener" title="Send Email">Email</a></div></footer><div class="floating-contact"><a href="https://wa.me/8619808253978" target="_blank" rel="noopener">WhatsApp</a></div><script src="../assets/js/miden-interaction-engine.js"></script><script src="../assets/js/miden-ai-quotation.js"></script><script src="../assets/js/miden-ai-engine.js"></script><script src="../assets/js/main.js"></script><script src="/assets/js/rfq-engine.js"></script></body></html>

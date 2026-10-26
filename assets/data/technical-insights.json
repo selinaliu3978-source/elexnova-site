@@ -1169,6 +1169,46 @@
         "Y-capacitor value is a compliance decision and a leakage decision at the same time: raising it buys attenuation at the low end and spends leakage current budget.",
         "Leakage current adds across paralleled supplies, so the practical ceiling for a rack is set by the residual current device protecting the branch, not by the standard alone."
       ]
+    },
+    {
+      "slug": "near-field-probe-emi-measurement",
+      "title": "Near-Field Probe EMI Measurement Guide",
+      "summary": "A practical guide to repeatable near-field probe measurements in switching power supplies: what loop and E-field probes actually sense, how height, orientation and cable currents distort readings, and how to localize noise sources and compare filter changes with confidence.",
+      "date": "2026-10-26",
+      "category": "Technical Articles",
+      "keywords": [
+        "near-field probe emi measurement",
+        "near field probe height and orientation",
+        "emi probe repeatability",
+        "e-field vs h-field probe",
+        "near-field probe cable common mode current",
+        "emi debugging switching node"
+      ],
+      "products": [
+        [
+          "Common Mode Choke Series",
+          "../products/common-mode-choke.html"
+        ],
+        [
+          "Power Inductor Series",
+          "../products/power-inductor.html"
+        ],
+        [
+          "Custom Magnetic Components",
+          "../products/custom-magnetic-components.html"
+        ]
+      ],
+      "related": [
+        "emi-suppression-in-power-supplies",
+        "emi-filter-design-basics",
+        "common-mode-choke-server-power-supply"
+      ],
+      "takeaways": [
+        "A near-field probe is a relative instrument: fix the gap, angle, cable route and receiver settings before comparing any two measurements.",
+        "A magnetic loop probe responds to dB/dt and an E-field probe to the electric field around a conductor; the coupling type decides which probe and which fix make sense.",
+        "Cable common-mode current and hand proximity can distort the reading. Keep the cable route fixed, use a repeatable probe holder, and test a ferrite sleeve only when needed.",
+        "Near-field probing localizes noise sources and validates filter changes, but it does not replace conducted or radiated compliance testing."
+      ]
     }
   ]
 }

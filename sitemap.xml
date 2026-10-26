@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://elexnova.com/news.html</loc>
-    <lastmod>2026-10-16</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.80</priority>
   </url>
@@ -249,6 +249,12 @@
   <url>
     <loc>https://elexnova.com/news/miden-factory-capability-update.html</loc>
     <lastmod>2026-09-30</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.70</priority>
+  </url>
+  <url>
+    <loc>https://elexnova.com/news/near-field-probe-emi-measurement.html</loc>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.70</priority>
   </url>

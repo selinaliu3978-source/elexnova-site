@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-16",
+  "generated": "2026-10-26",
   "hub": {
     "url": "https://elexnova.com/news.html",
     "mirror": "https://elexnova.com/news/",
@@ -11,7 +11,7 @@
       "name": "Technical Articles",
       "slug": "technical-articles",
       "description": "Component selection, core material, winding, loss and reliability know-how for inductors, chokes and transformers.",
-      "count": 18
+      "count": 19
     },
     {
       "name": "Applications",
@@ -32,8 +32,27 @@
       "count": 1
     }
   ],
-  "count": 30,
+  "count": 31,
   "articles": [
+    {
+      "slug": "near-field-probe-emi-measurement",
+      "url": "https://elexnova.com/news/near-field-probe-emi-measurement.html",
+      "title": "Near-Field Probe EMI Measurement Guide",
+      "summary": "A practical guide to repeatable near-field probe measurements in switching power supplies: what loop and E-field probes actually sense, how height, orientation and cable currents distort readings, and how to localize noise sources and compare filter changes with confidence.",
+      "date": "2026-10-26",
+      "updated": "2026-10-26",
+      "category": "Technical Articles",
+      "categorySlug": "technical-articles",
+      "keywords": [
+        "near-field probe emi measurement",
+        "near field probe height and orientation",
+        "emi probe repeatability",
+        "e-field vs h-field probe",
+        "near-field probe cable common mode current",
+        "emi debugging switching node"
+      ],
+      "readingMinutes": 7
+    },
     {
       "slug": "common-mode-choke-server-power-supply",
       "url": "https://elexnova.com/news/common-mode-choke-server-power-supply.html",
